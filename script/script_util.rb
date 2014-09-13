@@ -8,6 +8,9 @@ class Object
   def try(*a, &b)
     __send__(*a, &b) unless self.nil?
   end
+  def in?(collection)
+    collection.include?(self)
+  end
 end
 
 class Nokogiri::XML::Element
