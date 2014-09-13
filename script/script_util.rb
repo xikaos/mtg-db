@@ -10,6 +10,13 @@ class Object
   end
 end
 
+class Nokogiri::XML::Element
+  alias_method :_method_missing, :method_missing
+  def method_missing(meth, *a, &b)
+    get_attribute(meth) || _method_missing(meth, a, b)
+  end
+end
+
 def get(url)
   puts "getting #{url}"
   Nokogiri::HTML(open(URI.escape url))

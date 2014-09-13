@@ -1,35 +1,38 @@
 require_relative '../script_util.rb'
 
-FILE_PATH = File.expand_path('../../../data/gatherer/sets.json', __FILE__)
+FILE_PATH = File.expand_path('../../../data/gatherer/_sets.json', __FILE__)
 
-def extract_data(item)
-  name = item.text
-  return unless substitute(name)
-  return unless code = set_code(name)
-  name = substitute(name)
-  {
-    'name' => name,
-    'gatherer_code' => code
-  }
-end
+class SetDumper
+  class << self
+    def sets
+      page = get("http://gatherer.wizards.com/Pages/Default.aspx")
+      dropdown = page.css('select').find{|s| s.id.match('_set')}
+      dropdown.css('option').map do |option|
+        next if option.text.empty?
+        parse_set(option.text)
+      end.compact
+    end
 
-# Visit search page in order to get the set code. Not ideal.
-def set_code(name)
-  set_url = "http://gatherer.wizards.com/Pages/Search/Default.aspx?set=[\"#{name}\"]"
-  img = get(set_url).css("img").find{|i| i.attr(:title).try(:match, name)}
-  CGI.parse(img.attr(:src))['set'].first.try(:downcase) if img
-end
-
-def substitute(name)
-  case name
-  when "Magic: The Gathering-Commander"
-    "Commander"
-  when "Promo set for Gatherer"
-    nil
-  else name
+    def parse_set(name)
+      results = get("http://gatherer.wizards.com/Pages/Search/Default.aspx?output=compact&set=[\"#{name}\"]")
+      set_img = results.css('img').find{|img| img.src.match(/&set=/)}
+      if set_img.nil?
+        print "No Results for #{name}. Press Enter to Continue"; gets; nil
+      else
+        set_code = set_img.src.match(/&set=([^&]+)/)[1]
+        {name: name, gatherer_code: set_code}
+      end
+    end
   end
 end
 
-page = get('http://gatherer.wizards.com/Pages/Default.aspx')
-list = page.css('#ctl00_ctl00_MainContent_Content_SearchControls_setAddText option')
-write FILE_PATH, list.map(&method(:extract_data)).compact
+def key(set_json); set_json[:gatherer_code]; end
+def merge(data)
+  existing = read(FILE_PATH).map{|s| [key(s), s]}.to_h
+  data.each do |set|
+    existing[key(set)] = (existing[key(set)] || {}).merge(set)
+  end
+  existing.values.sort_by{|s| s['name']}
+end
+
+write FILE_PATH, merge( SetDumper.sets )
