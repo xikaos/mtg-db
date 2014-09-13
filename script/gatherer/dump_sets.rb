@@ -20,13 +20,13 @@ class SetDumper
         print "No Results for #{name}. Press Enter to Continue"; gets; nil
       else
         set_code = set_img.src.match(/&set=([^&]+)/)[1]
-        {name: name, gatherer_code: set_code}
+        {'name' => name, 'gatherer_code' => set_code}
       end
     end
   end
 end
 
-def key(set_json); set_json[:gatherer_code]; end
+def key(set_json); set_json['gatherer_code']; end
 def merge(data)
   existing = read(FILE_PATH).map{|s| [key(s), s]}.to_h
   data.each do |set|
@@ -35,4 +35,4 @@ def merge(data)
   existing.values.sort_by{|s| s['name']}
 end
 
-write FILE_PATH, merge( SetDumper.sets )
+write FILE_PATH, merge(SetDumper.sets)

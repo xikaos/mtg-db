@@ -1,0 +1,526 @@
+[
+  {
+    "name": "Alara Reborn",
+    "gatherer_code": "ARB"
+  },
+  {
+    "name": "Alliances",
+    "gatherer_code": "AL"
+  },
+  {
+    "name": "Antiquities",
+    "gatherer_code": "AQ"
+  },
+  {
+    "name": "Apocalypse",
+    "gatherer_code": "AP"
+  },
+  {
+    "name": "Arabian Nights",
+    "gatherer_code": "AN"
+  },
+  {
+    "name": "Archenemy",
+    "gatherer_code": "ARC"
+  },
+  {
+    "name": "Avacyn Restored",
+    "gatherer_code": "AVR"
+  },
+  {
+    "name": "Battle Royale Box Set",
+    "gatherer_code": "BR"
+  },
+  {
+    "name": "Beatdown Box Set",
+    "gatherer_code": "BD"
+  },
+  {
+    "name": "Betrayers of Kamigawa",
+    "gatherer_code": "BOK"
+  },
+  {
+    "name": "Born of the Gods",
+    "gatherer_code": "BNG"
+  },
+  {
+    "name": "Champions of Kamigawa",
+    "gatherer_code": "CHK"
+  },
+  {
+    "name": "Chronicles",
+    "gatherer_code": "CH"
+  },
+  {
+    "name": "Classic Sixth Edition",
+    "gatherer_code": "6E"
+  },
+  {
+    "name": "Coldsnap",
+    "gatherer_code": "CSP"
+  },
+  {
+    "name": "Commander 2013 Edition",
+    "gatherer_code": "C13"
+  },
+  {
+    "name": "Commander's Arsenal",
+    "gatherer_code": "CM1"
+  },
+  {
+    "name": "Conflux",
+    "gatherer_code": "CON"
+  },
+  {
+    "name": "Dark Ascension",
+    "gatherer_code": "DKA"
+  },
+  {
+    "name": "Darksteel",
+    "gatherer_code": "DST"
+  },
+  {
+    "name": "Dissension",
+    "gatherer_code": "DIS"
+  },
+  {
+    "name": "Dragon's Maze",
+    "gatherer_code": "DGM"
+  },
+  {
+    "name": "Duel Decks: Ajani vs. Nicol Bolas",
+    "gatherer_code": "DDH"
+  },
+  {
+    "name": "Duel Decks: Divine vs. Demonic",
+    "gatherer_code": "DDC"
+  },
+  {
+    "name": "Duel Decks: Elspeth vs. Tezzeret",
+    "gatherer_code": "DDF"
+  },
+  {
+    "name": "Duel Decks: Elves vs. Goblins",
+    "gatherer_code": "EVG"
+  },
+  {
+    "name": "Duel Decks: Garruk vs. Liliana",
+    "gatherer_code": "DDD"
+  },
+  {
+    "name": "Duel Decks: Heroes vs. Monsters",
+    "gatherer_code": "DDL"
+  },
+  {
+    "name": "Duel Decks: Izzet vs. Golgari",
+    "gatherer_code": "DDJ"
+  },
+  {
+    "name": "Duel Decks: Jace vs. Chandra",
+    "gatherer_code": "DD2"
+  },
+  {
+    "name": "Duel Decks: Jace vs. Vraska",
+    "gatherer_code": "DDM"
+  },
+  {
+    "name": "Duel Decks: Knights vs. Dragons",
+    "gatherer_code": "DDG"
+  },
+  {
+    "name": "Duel Decks: Phyrexia vs. the Coalition",
+    "gatherer_code": "DDE"
+  },
+  {
+    "name": "Duel Decks: Sorin vs. Tibalt",
+    "gatherer_code": "DDK"
+  },
+  {
+    "name": "Duel Decks: Speed vs. Cunning",
+    "gatherer_code": "DDN"
+  },
+  {
+    "name": "Duel Decks: Venser vs. Koth",
+    "gatherer_code": "DDI"
+  },
+  {
+    "name": "Eighth Edition",
+    "gatherer_code": "8ED"
+  },
+  {
+    "name": "Eventide",
+    "gatherer_code": "EVE"
+  },
+  {
+    "name": "Exodus",
+    "gatherer_code": "EX"
+  },
+  {
+    "name": "Fallen Empires",
+    "gatherer_code": "FE"
+  },
+  {
+    "name": "Fifth Dawn",
+    "gatherer_code": "5DN"
+  },
+  {
+    "name": "Fifth Edition",
+    "gatherer_code": "5E"
+  },
+  {
+    "name": "Fourth Edition",
+    "gatherer_code": "4E"
+  },
+  {
+    "name": "From the Vault: Annihilation (2014)",
+    "gatherer_code": "V14"
+  },
+  {
+    "name": "From the Vault: Dragons",
+    "gatherer_code": "DRB"
+  },
+  {
+    "name": "From the Vault: Exiled",
+    "gatherer_code": "V09"
+  },
+  {
+    "name": "From the Vault: Legends",
+    "gatherer_code": "V11"
+  },
+  {
+    "name": "From the Vault: Realms",
+    "gatherer_code": "V12"
+  },
+  {
+    "name": "From the Vault: Relics",
+    "gatherer_code": "V10"
+  },
+  {
+    "name": "From the Vault: Twenty",
+    "gatherer_code": "V13"
+  },
+  {
+    "name": "Future Sight",
+    "gatherer_code": "FUT"
+  },
+  {
+    "name": "Gatecrash",
+    "gatherer_code": "GTC"
+  },
+  {
+    "name": "Guildpact",
+    "gatherer_code": "GPT"
+  },
+  {
+    "name": "Homelands",
+    "gatherer_code": "HM"
+  },
+  {
+    "name": "Ice Age",
+    "gatherer_code": "IA"
+  },
+  {
+    "name": "Innistrad",
+    "gatherer_code": "ISD"
+  },
+  {
+    "name": "Invasion",
+    "gatherer_code": "IN"
+  },
+  {
+    "name": "Journey into Nyx",
+    "gatherer_code": "JOU"
+  },
+  {
+    "name": "Judgment",
+    "gatherer_code": "JUD"
+  },
+  {
+    "name": "Legends",
+    "gatherer_code": "LE"
+  },
+  {
+    "name": "Legions",
+    "gatherer_code": "LGN"
+  },
+  {
+    "name": "Limited Edition Alpha",
+    "gatherer_code": "1E"
+  },
+  {
+    "name": "Limited Edition Beta",
+    "gatherer_code": "2E"
+  },
+  {
+    "name": "Lorwyn",
+    "gatherer_code": "LRW"
+  },
+  {
+    "name": "Magic 2010",
+    "gatherer_code": "M10"
+  },
+  {
+    "name": "Magic 2011",
+    "gatherer_code": "M11"
+  },
+  {
+    "name": "Magic 2012",
+    "gatherer_code": "M12"
+  },
+  {
+    "name": "Magic 2013",
+    "gatherer_code": "M13"
+  },
+  {
+    "name": "Magic 2014 Core Set",
+    "gatherer_code": "M14"
+  },
+  {
+    "name": "Magic 2015 Core Set",
+    "gatherer_code": "M15"
+  },
+  {
+    "name": "Magic: The Gathering-Commander",
+    "gatherer_code": "CMD"
+  },
+  {
+    "name": "Magic: The Gathering—Conspiracy",
+    "gatherer_code": "CNS"
+  },
+  {
+    "name": "Masters Edition",
+    "gatherer_code": "MED"
+  },
+  {
+    "name": "Masters Edition II",
+    "gatherer_code": "ME2"
+  },
+  {
+    "name": "Masters Edition III",
+    "gatherer_code": "ME3"
+  },
+  {
+    "name": "Masters Edition IV",
+    "gatherer_code": "ME4"
+  },
+  {
+    "name": "Mercadian Masques",
+    "gatherer_code": "MM"
+  },
+  {
+    "name": "Mirage",
+    "gatherer_code": "MI"
+  },
+  {
+    "name": "Mirrodin",
+    "gatherer_code": "MRD"
+  },
+  {
+    "name": "Mirrodin Besieged",
+    "gatherer_code": "MBS"
+  },
+  {
+    "name": "Modern Event Deck 2014",
+    "gatherer_code": "MD1"
+  },
+  {
+    "name": "Modern Masters",
+    "gatherer_code": "MMA"
+  },
+  {
+    "name": "Morningtide",
+    "gatherer_code": "MOR"
+  },
+  {
+    "name": "Nemesis",
+    "gatherer_code": "NE"
+  },
+  {
+    "name": "New Phyrexia",
+    "gatherer_code": "NPH"
+  },
+  {
+    "name": "Ninth Edition",
+    "gatherer_code": "9ED"
+  },
+  {
+    "name": "Odyssey",
+    "gatherer_code": "OD"
+  },
+  {
+    "name": "Onslaught",
+    "gatherer_code": "ONS"
+  },
+  {
+    "name": "Planar Chaos",
+    "gatherer_code": "PLC"
+  },
+  {
+    "name": "Planechase",
+    "gatherer_code": "HOP"
+  },
+  {
+    "name": "Planechase 2012 Edition",
+    "gatherer_code": "PC2"
+  },
+  {
+    "name": "Planeshift",
+    "gatherer_code": "PS"
+  },
+  {
+    "name": "Portal",
+    "gatherer_code": "PO"
+  },
+  {
+    "name": "Portal Second Age",
+    "gatherer_code": "P2"
+  },
+  {
+    "name": "Portal Three Kingdoms",
+    "gatherer_code": "PK"
+  },
+  {
+    "name": "Premium Deck Series: Fire and Lightning",
+    "gatherer_code": "PD2"
+  },
+  {
+    "name": "Premium Deck Series: Graveborn",
+    "gatherer_code": "PD3"
+  },
+  {
+    "name": "Premium Deck Series: Slivers",
+    "gatherer_code": "H09"
+  },
+  {
+    "name": "Promo set for Gatherer",
+    "gatherer_code": "PPR"
+  },
+  {
+    "name": "Prophecy",
+    "gatherer_code": "PR"
+  },
+  {
+    "name": "Ravnica: City of Guilds",
+    "gatherer_code": "RAV"
+  },
+  {
+    "name": "Return to Ravnica",
+    "gatherer_code": "RTR"
+  },
+  {
+    "name": "Revised Edition",
+    "gatherer_code": "3E"
+  },
+  {
+    "name": "Rise of the Eldrazi",
+    "gatherer_code": "ROE"
+  },
+  {
+    "name": "Saviors of Kamigawa",
+    "gatherer_code": "SOK"
+  },
+  {
+    "name": "Scars of Mirrodin",
+    "gatherer_code": "SOM"
+  },
+  {
+    "name": "Scourge",
+    "gatherer_code": "SCG"
+  },
+  {
+    "name": "Seventh Edition",
+    "gatherer_code": "7E"
+  },
+  {
+    "name": "Shadowmoor",
+    "gatherer_code": "SHM"
+  },
+  {
+    "name": "Shards of Alara",
+    "gatherer_code": "ALA"
+  },
+  {
+    "name": "Starter 1999",
+    "gatherer_code": "P3"
+  },
+  {
+    "name": "Starter 2000",
+    "gatherer_code": "P4"
+  },
+  {
+    "name": "Stronghold",
+    "gatherer_code": "ST"
+  },
+  {
+    "name": "Tempest",
+    "gatherer_code": "TE"
+  },
+  {
+    "name": "Tenth Edition",
+    "gatherer_code": "10E"
+  },
+  {
+    "name": "The Dark",
+    "gatherer_code": "DK"
+  },
+  {
+    "name": "Theros",
+    "gatherer_code": "THS"
+  },
+  {
+    "name": "Time Spiral",
+    "gatherer_code": "TSP"
+  },
+  {
+    "name": "Time Spiral \"Timeshifted\"",
+    "gatherer_code": "TSB"
+  },
+  {
+    "name": "Torment",
+    "gatherer_code": "TOR"
+  },
+  {
+    "name": "Unglued",
+    "gatherer_code": "UG"
+  },
+  {
+    "name": "Unhinged",
+    "gatherer_code": "UNH"
+  },
+  {
+    "name": "Unlimited Edition",
+    "gatherer_code": "2U"
+  },
+  {
+    "name": "Urza's Destiny",
+    "gatherer_code": "CG"
+  },
+  {
+    "name": "Urza's Legacy",
+    "gatherer_code": "GU"
+  },
+  {
+    "name": "Urza's Saga",
+    "gatherer_code": "UZ"
+  },
+  {
+    "name": "Vintage Masters",
+    "gatherer_code": "VMA"
+  },
+  {
+    "name": "Visions",
+    "gatherer_code": "VI"
+  },
+  {
+    "name": "Weatherlight",
+    "gatherer_code": "WL"
+  },
+  {
+    "name": "Worldwake",
+    "gatherer_code": "WWK"
+  },
+  {
+    "name": "Zendikar",
+    "gatherer_code": "ZEN"
+  }
+]
