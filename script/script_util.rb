@@ -13,6 +13,14 @@ class Object
   end
 end
 
+class Hash
+  def slice(*keys)
+    keys.each_with_object({}) do |k, hash|
+      hash[k] = self[k] if has_key?(k)
+    end
+  end
+end
+
 class Nokogiri::XML::Element
   alias_method :_method_missing, :method_missing
   def method_missing(meth, *a, &b)
