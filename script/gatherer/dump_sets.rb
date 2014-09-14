@@ -1,6 +1,6 @@
 require_relative '../script_util.rb'
 
-OUTPUT = File.expand_path('../../../data/gatherer/_sets.json', __FILE__)
+OUTPUT = File.expand_path('../../../data/gatherer/sets.json', __FILE__)
 CODE_REPLACEMENT = {
   'al' => 'all', 'aq' => 'atq', 'ap' => 'apc', 'an' => 'arn', 'br' => 'brb',
   'bd' => 'btd', 'ch' => 'chr', '6e' => '6ed', 'ex' => 'exo', 'fe' => 'fem',
