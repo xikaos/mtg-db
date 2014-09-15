@@ -47,22 +47,32 @@ class Card
   end
 
   def mana_cost
+    case @given_name # Exceptions
+    when 'Little Girl'; return 'W'
+    end
+
     @content.css('.row[id*="_manaRow"] img').map do |img|
-      case img.alt
-      when 'White'; 'W'
-      when 'Blue'; 'U'
-      when 'Black'; 'B'
-      when 'Red'; 'R'
-      when 'Green'; 'G'
-      when '500'; 'W' # Exception for Unhinged's "Little Girl"
-      else img.alt
-      end
+      cost = translate_icon(img.alt)
+      cost.match(/^\{(\w{1}|\d+)\}$/) ? cost.gsub( /^\{|\}$/, '') : cost #/# this line fucks with syntax highlighting
     end.join
   end
 
   def oracle_text
-    # TODO: Replace images (tap, mana, untap, etc.) with {T}, {U} etc.
+    case @given_name # Exceptions
+    when 'Cheap Ass'
+      return ["Spells you play cost {½} less to play."]
+    when 'Flaccify'
+      return ["Counter target spell unless its controller pays {3}{½}."]
+    when 'Mox Lotus'
+      return ["{T}: Add {∞} to your mana pool.",
+              "{100}: Add one mana of any color to your mana pool.",
+              "You don't lose life due to mana burn."]
+    end
+
     @content.css('.row[id*="_textRow"] .cardtextbox').map do |line|
+      line.css('img').each do |img|
+        img.content = translate_icon(img.alt)
+      end
       line.text.strip
     end
   end
@@ -138,6 +148,45 @@ private
 
   def split_card?
     @page.css('.contentTitle').text.match(/\/\//)
+  end
+
+  def translate_icon(name)
+    case name
+    when 'White'; '{W}'
+    when 'Blue';  '{U}'
+    when 'Black'; '{B}'
+    when 'Red';   '{R}'
+    when 'Green'; '{G}'
+    when 'White or Blue';  '{W/U}'
+    when 'White or Black'; '{W/B}'
+    when 'Blue or Black';  '{U/B}'
+    when 'Blue or Red';    '{U/R}'
+    when 'Black or Red';   '{B/R}'
+    when 'Black or Green'; '{B/G}'
+    when 'Red or White';   '{R/W}'
+    when 'Red or Green';   '{R/G}'
+    when 'Green or White'; '{G/W}'
+    when 'Green or Blue';  '{G/U}'
+    when 'Two or White'; '{2/W}'
+    when 'Two or Blue';  '{2/U}'
+    when 'Two or Black'; '{2/B}'
+    when 'Two or Red';   '{2/R}'
+    when 'Two or Green'; '{2/G}'
+    when 'Phyrexian';       '{P}'
+    when 'Phyrexian White'; '{WP}'
+    when 'Phyrexian Blue';  '{UP}'
+    when 'Phyrexian Black'; '{BP}'
+    when 'Phyrexian Red';   '{RP}'
+    when 'Phyrexian Green'; '{GP}'
+    when 'Snow';  '{S}'
+    when 'Tap';   '{T}'
+    when 'Untap'; '{Q}'
+    when 'Variable Colorless'; '{X}'
+    when /^(\d+)$/
+      "{#{$1}}"
+    else
+      raise "Unknown icon: #{name}"
+    end
   end
 end
 
