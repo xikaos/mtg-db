@@ -24,6 +24,8 @@ class CardDumper
 end
 
 class Card
+  SUPERTYPES = %w[Basic Legendary World Snow]
+
   def initialize(name, id)
     @given_name = name
     @multiverse_id = id
@@ -44,6 +46,16 @@ class Card
     else
       card_name
     end
+  end
+
+  def types
+    value_of('type').split("—").map(&:strip)[0].split(' ') - SUPERTYPES
+  end
+  def supertypes
+    (value_of('type').split("—").map(&:strip)[0].split(' ') & SUPERTYPES) || []
+  end
+  def subtypes
+    value_of('type').split("—").map(&:strip)[1].split(' ') rescue []
   end
 
   def mana_cost
@@ -124,9 +136,9 @@ class Card
       'set_name'            => value_of('set'),
       'collector_num'       => value_of('number'),
       'illustrator'         => value_of('artist'),
-      'types'               => [],
-      'supertypes'          => [],
-      'subtypes'            => [],
+      'types'               => types,
+      'supertypes'          => supertypes,
+      'subtypes'            => subtypes,
       'rarity'              => value_of('rarity'),
       'mana_cost'           => mana_cost,
       'converted_mana_cost' => value_of('cmc').to_i,
@@ -135,11 +147,12 @@ class Card
       'power'               => power,
       'toughness'           => toughness,
       'loyalty'             => loyalty,
-      'multiverse_id'       => @multiverse_id,
+      'multiverse_id'       => @multiverse_id.to_i,
       'other_part'          => other_part,
       'color_indicator'     => value_of('colorIndicator')
     }
   end
+
 private
 
   def value_of(attr)
