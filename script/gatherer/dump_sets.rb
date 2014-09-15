@@ -32,9 +32,9 @@ class SetDumper
       end.compact
     end
 
-    def search(name)
+    def search(name, page=0)
       name = NAME_REPLACEMENT.invert[name] || name # use the set names that gatherer expects
-      get("http://gatherer.wizards.com/Pages/Search/Default.aspx?output=compact&set=[\"#{name}\"]")
+      get("http://gatherer.wizards.com/Pages/Search/Default.aspx?page=#{page}&output=compact&set=[\"#{name}\"]")
     end
 
     def parse_set(name)

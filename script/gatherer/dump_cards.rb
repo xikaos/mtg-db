@@ -15,17 +15,28 @@ class CardDumper
 
   def cards
     @sets.map do |set|
-      search_results = SetDumper.search( set['name'] )
-      # TODO: Process pages 2, 3, etc!!!
-      search_results.css('.cardItem').map do |row|
-        card_name = row.css('.name').text.strip
-        row.css('.printings a').map do |a|
-          printing_id = a.href.match(/multiverseid=(\d+)/)[1]
-          Card.new(card_name, printing_id).as_json
-        end
-      end.flatten.uniq.sort_by{|card| card['collector_num'].to_i}
+      processed_cards = []; page = 1; num_pages = 1
+      while num_pages >= page
+        results = SetDumper.search(set['name'], page-1)
+        num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).join.to_i
+        num_pages = (num_results / 100.0).ceil; page += 1
+        processed_cards += process_page(results)
+      end
+      # TODO: Filter out duplicate cards. See: APC Fire/Ice duplicate printings
+      processed_cards.flatten.sort_by{|card| card['collector_num'].to_i}
     end.flatten
   end
+
+  def process_page(page)
+    page.css('.cardItem').map do |row|
+      card_name = row.css('.name').text.strip
+      row.css('.printings a').map do |a|
+        printing_id = a.href.match(/multiverseid=(\d+)/)[1]
+        Card.new(card_name, printing_id).as_json
+      end
+    end
+  end
+
 end
 
 class Card
