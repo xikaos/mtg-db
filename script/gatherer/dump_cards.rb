@@ -4,8 +4,8 @@ require_relative './dump_sets.rb'
 class CardDumper
   OUTPUT = File.expand_path('../../../data/gatherer/cards.json', __FILE__)
 
-  def self.existing
-    read(OUTPUT).map{|c| [[c['set_name'], c['collector_num']], c]}.to_h
+  def self.existing(file=OUTPUT)
+    read(file).map{|c| [[c['set_name'], c['collector_num']], c]}.to_h
   end
 
   def initialize(sets)
@@ -239,8 +239,8 @@ private
   end
 end
 
-def merge(data)
-  existing = CardDumper.existing
+def merge(data, file=CardDumper::OUTPUT)
+  existing = CardDumper.existing(file)
   data.each do |card|
     key = [card['set_name'], card['collector_num']]
     existing[key] = (existing[key] || {}).merge(card)
@@ -249,5 +249,7 @@ def merge(data)
 end
 
 if __FILE__==$0
-  write CardDumper::OUTPUT, merge( CardDumper.new(ARGV).cards )
+  alt_output = ARGV.find{|arg| arg.match('output=')}
+  output_file = alt_output ? alt_output.scan(/=([^\s]+)/).join : CardDumper::OUTPUT
+  write output_file, merge( CardDumper.new(ARGV).cards, output_file )
 end
