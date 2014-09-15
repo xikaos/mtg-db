@@ -16,6 +16,7 @@ class CardDumper
   def cards
     @sets.map do |set|
       search_results = SetDumper.search( set['name'] )
+      # TODO: Process pages 2, 3, etc!!!
       search_results.css('.cardItem').map do |row|
         card_name = row.css('.name').text.strip
         row.css('.printings a').map do |a|
