@@ -43,6 +43,10 @@ class Card
   SUPERTYPES = %w[Basic Legendary World Snow]
 
   def initialize(name, id)
+    # Newer split cards are given as "Down // Dirty (Down)"
+    if name.match(/\w+ \/\/ \w+ \(\w+\)/)
+      name = name.scan(/\((\w+)\)/).join
+    end
     @given_name = name
     @multiverse_id = id
   end
@@ -158,7 +162,7 @@ class Card
       'name'                => name,
       'set_name'            => value_of('set'),
       'collector_num'       => collector_num,
-      'illustrator'         => value_of('artist'),
+      'illustrator'         => value_of('artist'), # TODO: Fix for split cards with different illustrators
       'types'               => types,
       'supertypes'          => supertypes,
       'subtypes'            => subtypes,
@@ -170,7 +174,7 @@ class Card
       'power'               => power,
       'toughness'           => toughness,
       'loyalty'             => loyalty,
-      'multiverse_id'       => @multiverse_id.to_i,
+      'multiverse_id'       => @multiverse_id.to_i, # TODO: Fix for split cards with different ids. APC, INV, etc.
       'other_part'          => other_part,
       'color_indicator'     => value_of('colorIndicator')
     }
