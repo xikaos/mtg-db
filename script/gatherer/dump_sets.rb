@@ -64,5 +64,5 @@ def merge(data)
 end
 
 if __FILE__==$0
-  write SetDumper::OUTPUT, merge(SetDumper.sets)
+  write SetDumper::OUTPUT, merge( SetDumper.sets )
 end

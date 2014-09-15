@@ -4,13 +4,17 @@ require_relative './dump_sets.rb'
 class CardDumper
   OUTPUT = File.expand_path('../../../data/gatherer/cards.json', __FILE__)
 
+  def self.existing
+    read(OUTPUT).map{|c| [[c['set_name'], c['collector_num']], c]}.to_h
+  end
+
   def initialize(sets)
     all_sets = SetDumper.existing
     @sets = sets.empty? ? all_sets.values : all_sets.slice(*sets).values
   end
 
   def cards
-    @sets.each do |set|
+    @sets.map do |set|
       search_results = SetDumper.search( set['name'] )
       search_results.css('.cardItem').map do |row|
         card_name = row.css('.name').text.strip
@@ -18,8 +22,8 @@ class CardDumper
           printing_id = a.href.match(/multiverseid=(\d+)/)[1]
           Card.new(card_name, printing_id).as_json
         end
-      end#.flatten.uniq.sort_by(&:collector_num) Remove duplicates, because APC split cards
-    end
+      end.flatten.uniq.sort_by{|card| card['collector_num'].to_i}
+    end.flatten
   end
 end
 
@@ -130,7 +134,6 @@ class Card
 
   def as_json
     load_content
-    require 'pry'; binding.pry
     {
       'name'                => name,
       'set_name'            => value_of('set'),
@@ -203,6 +206,15 @@ private
   end
 end
 
+def merge(data)
+  existing = CardDumper.existing
+  data.each do |card|
+    key = [card['set_name'], card['collector_num']]
+    existing[key] = (existing[key] || {}).merge(card)
+  end
+  existing.values
+end
+
 if __FILE__==$0
-  CardDumper.new( ARGV ).cards
+  write CardDumper::OUTPUT, merge( CardDumper.new(ARGV).cards )
 end
