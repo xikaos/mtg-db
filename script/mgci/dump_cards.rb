@@ -5,8 +5,8 @@ require_relative './dump_images.rb'
 FILE_PATH = File.expand_path('../../../data/mgci/cards.json', __FILE__)
 def key(card_json); [card_json['set_name'], card_json['collector_num']]; end
 
-def merge(data)
-  existing = Hash[read(FILE_PATH).map{|c| [key(c), c]}]
+def merge(data, file=FILE_PATH)
+  existing = read(file).map{|c| [key(c), c]}.to_h
   data.each do |card|
     existing[key(card)] = (existing[key(card)] || {}).merge(card)
   end
@@ -178,9 +178,12 @@ sets.each do |set|
   cards << cnums.map{|n| CardPage.new(set, n).as_json}
 end
 
-write FILE_PATH, merge(cards.flatten)
+output = ARGV[1] ? ARGV[1] : FILE_PATH
+write output, merge(cards.flatten, output)
 
-sets.each do |set|
-  next if ARGV[0] && ARGV[0] != set['mgci_code']
-  ImageDumper.new(set['mgci_code']).run
+unless ARGV.include?('no-images')
+  sets.each do |set|
+    next if ARGV[0] && ARGV[0] != set['mgci_code']
+    ImageDumper.new(set['mgci_code']).run
+  end
 end
