@@ -119,19 +119,25 @@ class Card
   end
 
   def power
+    case @given_name # Exceptions
+    when 'Little Girl'; return '1/2'
+    end
+
     row = @content.css('.row[id*="_ptRow"]')
     if row.css('.label').text.strip == "P/T:"
       value = row.css('.value').text
-      return "1/2" if value == "{1/2} / {1/2}" # Exception for Unhinged's "Little Girl"
       value.split('/')[0].strip
     end
   end
 
   def toughness
+    case @given_name # Exceptions
+    when 'Little Girl'; return '1/2'
+    end
+
     row = @content.css('.row[id*="_ptRow"]')
     if row.css('.label').text.strip == "P/T:"
       value = row.css('.value').text
-      return "1/2" if value == "{1/2} / {1/2}" # Exception for Unhinged's "Little Girl"
       value.split('/')[1].strip
     end
   end
@@ -147,11 +153,11 @@ class Card
     name_rows = @page.css('.row[id*="_nameRow"] .value')
     if name_rows.count > 1
       names = name_rows.map{|row| row.text.strip}
-      card_name = names.find{|name| name != @given_name}
+      other_name = names.find{|name| name != @given_name}
       if split_card?
-        "#{card_name} (#{split_card_name})" # ex: Ice (Fire/Ice)
+        "#{other_name} (#{split_card_name})" # ex: Ice (Fire/Ice)
       else
-        card_name
+        other_name
       end
     end
   end
