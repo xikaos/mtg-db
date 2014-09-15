@@ -18,9 +18,9 @@ class CardDumper
       processed_cards = []; page = 1; num_pages = 1
       while num_pages >= page
         results = SetDumper.search(set['name'], page-1)
+        processed_cards += process_page(results)
         num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).join.to_i
         num_pages = (num_results / 100.0).ceil; page += 1
-        processed_cards += process_page(results)
       end
       # TODO: Filter out duplicate cards. See: APC Fire/Ice duplicate printings
       processed_cards.flatten.sort_by{|card| card['collector_num'].to_i}
@@ -57,7 +57,7 @@ class Card
   def name
     card_name = value_of('name')
     if split_card?
-      split_card_name = @page.css('.contentTitle').text.strip.gsub('//', '/')
+      split_card_name = @page.css('.contentTitle').text.strip.gsub(' // ', '/')
       "#{card_name} (#{split_card_name})" # ex: Fire (Fire/Ice)
     else
       card_name
@@ -101,8 +101,8 @@ class Card
       line.css('img').each do |img|
         img.content = translate_icon(img.alt)
       end
-      line.text.strip
-    end
+      line.text.strip.presence
+    end.compact
   end
 
   def power
