@@ -2,29 +2,41 @@ require_relative '../script_util.rb'
 require_relative './dump_sets.rb'
 
 class CardDumper
-  OUTPUT = File.expand_path('../../../data/gatherer/cards.json', __FILE__)
-
-  def self.existing(file=OUTPUT)
-    read(file).map{|c| [[c['set_name'], c['collector_num']], c]}.to_h
+  def self.read_file(input)
+    read(input).map{|c| [[c['set_name'], c['collector_num']], c]}.to_h
   end
 
-  def initialize(sets)
-    all_sets = SetDumper.existing
-    @sets = sets.empty? ? all_sets.values : all_sets.slice(*sets).values
+  def initialize(set)
+    @set = set
+  end
+
+  def output
+    folder = File.expand_path('../../../data/gatherer/sets', __FILE__)
+    File.join(folder, "#{@set['code']}.json")
   end
 
   def cards
-    @sets.map do |set|
-      processed_cards = []; page = 1; num_pages = 1
-      while num_pages >= page
-        results = SetDumper.search(set['name'], page-1)
-        processed_cards += process_page(results)
-        num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).join.to_i
-        num_pages = (num_results / 100.0).ceil; page += 1
+    processed = []; page = 1; num_pages = 1
+    while num_pages >= page
+      results = SetDumper.search(@set['name'], page-1)
+      processed += process_page(results)
+      num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).join.to_i
+      num_pages = (num_results / 100.0).ceil; page += 1
+    end; processed.flatten!
+
+    # For older sets without collector_nums, assign numbers based on multiverse_id
+    if processed.any?{|c| c['collector_num'].blank?}
+      if processed.any?{|c| c['collector_num'].present?}
+        raise "Some cards have collector_num, some don't."
       end
-      # TODO: Filter out duplicate cards. See: APC Fire/Ice duplicate printings
-      processed_cards.flatten.sort_by{|card| card['collector_num'].to_i}
-    end.flatten
+      processed.sort_by{|c| c['multiverse_id']}.each_with_index do |card, i|
+        card['collector_num'] = (i+1).to_s
+      end
+    end
+
+    processed.sort_by do |card|
+      [card['collector_num'].to_i, card['collector_num']]
+    end
   end
 
   def process_page(page)
@@ -95,7 +107,7 @@ class Card
     @content.css('.row[id*="_manaRow"] img').map do |img|
       cost = translate_icon(img.alt)
       cost.match(/^\{(\w{1}|\d+)\}$/) ? cost.gsub( /^\{|\}$/, '') : cost #/# this line fucks with syntax highlighting
-    end.join
+    end.join.presence
   end
 
   def oracle_text
@@ -108,6 +120,11 @@ class Card
       return ["{T}: Add {∞} to your mana pool.",
               "{100}: Add one mana of any color to your mana pool.",
               "You don't lose life due to mana burn."]
+    when 'Plains';   ['({T}: Add {W} to your mana pool.)']
+    when 'Island';   ['({T}: Add {U} to your mana pool.)']
+    when 'Swamp';    ['({T}: Add {B} to your mana pool.)']
+    when 'Mountain'; ['({T}: Add {R} to your mana pool.)']
+    when 'Forest';   ['({T}: Add {G} to your mana pool.)']
     end
 
     @content.css('.row[id*="_textRow"] .cardtextbox').map do |line|
@@ -239,8 +256,8 @@ private
   end
 end
 
-def merge(data, file=CardDumper::OUTPUT)
-  existing = CardDumper.existing(file)
+def merge(data, input)
+  existing = CardDumper.read_file(input)
   data.each do |card|
     key = [card['set_name'], card['collector_num']]
     existing[key] = (existing[key] || {}).merge(card)
@@ -249,7 +266,10 @@ def merge(data, file=CardDumper::OUTPUT)
 end
 
 if __FILE__==$0
-  alt_output = ARGV.find{|arg| arg.match('output=')}
-  output_file = alt_output ? alt_output.scan(/=([^\s]+)/).join : CardDumper::OUTPUT
-  write output_file, merge( CardDumper.new(ARGV).cards, output_file )
+  @sets = ARGV.empty? ? SetDumper.existing.values
+                      : SetDumper.existing.slice(*ARGV).values
+  @sets.each do |set|
+    dumper = CardDumper.new(set)
+    write dumper.output, merge(dumper.cards, dumper.output)
+  end
 end
