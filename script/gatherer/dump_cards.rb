@@ -57,11 +57,20 @@ class Card
   def name
     card_name = value_of('name')
     if split_card?
-      split_card_name = @page.css('.contentTitle').text.strip.gsub(' // ', '/')
       "#{card_name} (#{split_card_name})" # ex: Fire (Fire/Ice)
     else
       card_name
     end
+  end
+
+  def collector_num
+    # Gatherer does some weird shit with the numbers for split cards. Calculate
+    # the correct number using the order of the "(Fire // Ice)" name
+    if split_card?
+      available_numbers = @page.css('.row[id*="_numberRow"] .value').map{|div| div.text.strip}.sort
+      return available_numbers[ split_card_name.split('/').index(@given_name) ]
+    end
+    value_of('number')
   end
 
   def types
@@ -136,7 +145,6 @@ class Card
       names = name_rows.map{|row| row.text.strip}
       card_name = names.find{|name| name != @given_name}
       if split_card?
-        split_card_name = @page.css('.contentTitle').text.strip.gsub(' // ', '/')
         "#{card_name} (#{split_card_name})" # ex: Ice (Fire/Ice)
       else
         card_name
@@ -149,7 +157,7 @@ class Card
     {
       'name'                => name,
       'set_name'            => value_of('set'),
-      'collector_num'       => value_of('number'),
+      'collector_num'       => collector_num,
       'illustrator'         => value_of('artist'),
       'types'               => types,
       'supertypes'          => supertypes,
@@ -176,6 +184,9 @@ private
 
   def split_card?
     @page.css('.contentTitle').text.match(/\/\//)
+  end
+  def split_card_name
+    @page.css('.contentTitle').text.strip.gsub(' // ', '/')
   end
 
   def translate_icon(name)
