@@ -682,7 +682,7 @@ COLLECTOR_NUMS = {
 }.freeze
 
 MANA_COST = {
-  '74257' => 'W' # Unhinged's Little Girl
+  '74257' => 'W' # Unhinged - Little Girl
 }.freeze
 
 ORACLE_TEXT = {
@@ -694,6 +694,25 @@ ORACLE_TEXT = {
 }.freeze
 
 FLAVOR_TEXT = {
+  '24' => "\"Some of the other guys dared me to touch it, but I knew it weren't no ordinary hunk o' rock.\" —Norin the Wary",
+  '112' => "Of royal blood among the spirits of the air, the Mahamoti Djinn rides on the wings of the winds. As dangerous in the gambling hall as he is in battle, he is a master of trickery and misdirection.",
+  '137' => "\"This 'standing windstorm' can hold us off indefinitely? Ridiculous!\" Saying nothing, she put a pinch of salt on the table. With a bang she clapped her hands, and the salt disappeared, blown away.",
+  '147' => "I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, \"Well, at least now we're fighting in the shade!\"",
+  '179' => "\"What else, when chaos draws all forces inward to shape a single leaf.\" —Conrad Aiken",
+  '180' => "\"And through the drifts the snowy cliffs/ Did send a dismal sheen:/ Nor shapes of men nor beasts we ken—/ The ice was all between.\"/ —Samuel Coleridge, \"The Rime of the Ancient Mariner\"",
+  '201' => "\"From up here we can drop rocks and arrows and more rocks!\" \"Uh, yeah boss, but how do we get down?\"",
+  '218' => "We encountered a valley topped with immense boulders and eerie rock formations. Suddenly one of these boulders toppled from its perch and sprouted gargantuan wings, casting a shadow of darkness and sending us fleeing in terror.",
+  '261' => "\"'Do you know, I always thought Unicorns were fabulous monsters, too? I never saw one alive before!' 'Well, now that we have seen each other,' said the Unicorn, 'if you'll believe in me, I'll believe in you.'\" —Lewis Carroll",
+  '376' => "\"They groaned, they stirred, they all uprose,/ Nor spake, nor moved their eyes;/ It had been strange, even in a dream,/To have seen those dead men rise.\"/ —Samuel Coleridge, \"The Rime of the Ancient Mariner\"",
+  '319' => "\"Some of the other guys dared me to touch it, but I knew it weren't no ordinary hunk o' rock.\" —Norin the Wary",
+  '407' => "Of royal blood among the spirits of the air, the Mahamoti Djinn rides on the wings of the winds. As dangerous in the gambling hall as he is in battle, he is a master of trickery and misdirection.",
+  '432' => "\"This 'standing windstorm' can hold us off indefinitely? Ridiculous!\" Saying nothing, she put a pinch of salt on the table. With a bang she clapped her hands, and the salt disappeared, blown away.",
+  '442' => "I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, \"Well, at least now we're fighting in the shade!\"",
+  '456' => "After years of training, the Druid becomes one with nature, drawing power from the land and returning it when needed.",
+  '474' => "\"What else, when chaos draws all forces inward to shape a single leaf.\" —Conrad Aiken",
+  '496' => "\"From up here we can drop rocks and arrows and more rocks!\" \"Uh, yeah boss, but how do we get down?\"",
+  '513' => "We encountered a valley topped with immense boulders and eerie rock formations. Suddenly one of these boulders toppled from its perch and sprouted gargantuan wings, casting a shadow of darkness and sending us fleeing in terror.",
+  '557' => "\"'Do you know, I always thought Unicorns were fabulous monsters, too? I never saw one alive before!' 'Well, now that we have seen each other,' said the Unicorn, 'if you'll believe in me, I'll believe in you.'\" —Lewis Carroll",
   '11212' => "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald",
   '11303' => "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",
   '11340' => "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage",
@@ -730,11 +749,15 @@ FLAVOR_TEXT = {
 }.freeze
 
 POWER = {
-  '74257' => '1/2' # Unhinged's Little Girl
+  '24' => nil, # Alpha - Jade Statue
+  '319' => nil, # Beta - Jade Statue
+  '74257' => '1/2' # Unhinged - Little Girl
 }.freeze
 
 TOUGHNESS = {
-  '74257' => '1/2' # Unhinged's Little Girl
+  '24' => nil, # Alpha - Jade Statue
+  '319' => nil, # Beta - Jade Statue
+  '74257' => '1/2' # Unhinged - Little Girl
 }.freeze
 
 ICONS = {

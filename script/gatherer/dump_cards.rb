@@ -133,7 +133,7 @@ class Card
 
   def flavor_text
     return FLAVOR_TEXT[@multiverse_id] if @multiverse_id.in?(FLAVOR_TEXT)
-    value_of('flavor')#.gsub('"—', '" —').gsub('""', '" "')
+    value_of('flavor')#.gsub('"—', '" —').gsub('‘', "'").gsub('""', '" "')
   end
 
   def power
