@@ -12,6 +12,18 @@ COLLECTOR_NUMS = {
   '15443'=>'311','15409'=>'312','14769'=>'313','15402'=>'314','15410'=>'315'
 }.freeze
 
+MANA_COST = {
+  '74257' => 'W' # Unhinged's Little Girl
+}.freeze
+
+ORACLE_TEXT = {
+  '74220' => ["Spells you play cost {½} less to play."],
+  '74330' => ["Counter target spell unless its controller pays {3}{½}."],
+  '74323' => ["{T}: Add {∞} to your mana pool.",
+              "{100}: Add one mana of any color to your mana pool.",
+              "You don't lose life due to mana burn."]
+}.freeze
+
 FLAVOR_TEXT = {
   '11212' => "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald",
   '11303' => "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",

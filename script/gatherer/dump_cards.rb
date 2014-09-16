@@ -54,8 +54,6 @@ class CardDumper
 end
 
 class Card
-  SUPERTYPES = %w[Basic Legendary World Snow]
-
   def initialize(name, id)
     # Newer split cards are given as "Down // Dirty (Down)"
     if name.match(/\w+ \/\/ \w+ \(\w+\)/)
@@ -94,13 +92,14 @@ class Card
   end
 
   def illustrator
-    # TODO: Fix for split cards with different illustrators
+    # TODO: Fix for split cards with separate illustrators
     case artist = value_of('artist')
     when 'Brian Snoddy'; 'Brian Snõddy'
     else; artist
     end
   end
 
+  SUPERTYPES = %w[Basic Legendary World Snow]
   def types
     value_of('type').split("—").map(&:strip)[0].split(' ') - SUPERTYPES
   end
@@ -113,9 +112,7 @@ class Card
   end
 
   def mana_cost
-    case @given_name # Exceptions
-    when 'Little Girl'; return 'W'
-    end
+    return MANA_COST[@multiverse_id] if @multiverse_id.in?(MANA_COST)
 
     @content.css('.row[id*="_manaRow"] img').map do |img|
       cost = translate_icon(img.alt)
@@ -124,20 +121,14 @@ class Card
   end
 
   def oracle_text
-    case @given_name # Exceptions
-    when 'Cheap Ass'
-      return ["Spells you play cost {½} less to play."]
-    when 'Flaccify'
-      return ["Counter target spell unless its controller pays {3}{½}."]
-    when 'Mox Lotus'
-      return ["{T}: Add {∞} to your mana pool.",
-              "{100}: Add one mana of any color to your mana pool.",
-              "You don't lose life due to mana burn."]
-    when 'Plains';   ['({T}: Add {W} to your mana pool.)']
-    when 'Island';   ['({T}: Add {U} to your mana pool.)']
-    when 'Swamp';    ['({T}: Add {B} to your mana pool.)']
-    when 'Mountain'; ['({T}: Add {R} to your mana pool.)']
-    when 'Forest';   ['({T}: Add {G} to your mana pool.)']
+    return ORACLE_TEXT[@multiverse_id] if @multiverse_id.in?(ORACLE_TEXT)
+
+    case @given_name
+    when 'Plains';   return ['({T}: Add {W} to your mana pool.)']
+    when 'Island';   return ['({T}: Add {U} to your mana pool.)']
+    when 'Swamp';    return ['({T}: Add {B} to your mana pool.)']
+    when 'Mountain'; return ['({T}: Add {R} to your mana pool.)']
+    when 'Forest';   return ['({T}: Add {G} to your mana pool.)']
     end
 
     @content.css('.row[id*="_textRow"] .cardtextbox').map do |line|
