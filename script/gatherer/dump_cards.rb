@@ -86,7 +86,7 @@ class Card
     '14781'=>'299','14782'=>'300','15442'=>'301','15435'=>'302','15401'=>'303','14767'=>'304',
     '15408'=>'305','14784'=>'306','15436'=>'307','11454'=>'308','14768'=>'309','11503'=>'310',
     '15443'=>'311','15409'=>'312','14769'=>'313','15402'=>'314','15410'=>'315'
-  }
+  }.freeze
   def collector_num
     return COLLECTOR_NUMS[@multiverse_id] if @multiverse_id.in?(COLLECTOR_NUMS)
 
@@ -153,27 +153,29 @@ class Card
     end.compact
   end
 
+  FLAVOR_TEXT = {
+    # Classic Sixth Edition
+    '11212' => "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald",
+    '11303' => "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",
+    '11340' => "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage",
+    '11476' => "\"I fear anything with teeth measured in handspans!\" —Norin the Wary",
+    '14490' => "\"Hold your position! Leave doubt for the dying!\" —Tahngarth of the Weatherlight",
+    '14538' => "\"Leviathan, too! Can you catch him with a fish-hook or run a line round his tongue?\" —The Bible, Job 41:1",
+    '14604' => "\"But I signed nothing!\" —Taraneh, Suq'Ata mage",
+    '14611' => "\"Hi! ni! ya! Behold the man of flint, that's me! / Four lightnings zigzag from me, strike and return.\" —Navajo war chant",
+    '14618' => "\"From down here we can make the whole wall collapse!\"\"Uh, yeah, boss, but how do we get out?\"",
+    '14648' => "\"If your blood doesn't run hot, I will make it run in the sands!\" —Maraxus of Keld",
+    '14716' => "\"I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, ‘Well, at least now we're fighting in the shade!'\"",
+    '15415' => "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back!\" —Biggum Flodrot, goblin veteran",
+    '15417' => "\"Next!\"",
+    '15421' => "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV",
+    '15445' => "\"Ahh! Opposable digits!\"",
+    '16441' => "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir",
+    '16629' => "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir"
+  }.freeze
   def flavor_text
-    case @multiverse_id # Exceptions
-    when '11212'; "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald"
-    when '11303'; "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure"
-    when '11340'; "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage"
-    when '11476'; "\"I fear anything with teeth measured in handspans!\" —Norin the Wary"
-    when '14490'; "\"Hold your position! Leave doubt for the dying!\" —Tahngarth of the Weatherlight"
-    when '14538'; "\"Leviathan, too! Can you catch him with a fish-hook or run a line round his tongue?\" —The Bible, Job 41:1"
-    when '14604'; "\"But I signed nothing!\" —Taraneh, Suq'Ata mage"
-    when '14611'; "\"Hi! ni! ya! Behold the man of flint, that's me! / Four lightnings zigzag from me, strike and return.\" —Navajo war chant"
-    when '14618'; "\"From down here we can make the whole wall collapse!\"\"Uh, yeah, boss, but how do we get out?\""
-    when '14648'; "\"If your blood doesn't run hot, I will make it run in the sands!\" —Maraxus of Keld"
-    when '14716'; "\"I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, ‘Well, at least now we're fighting in the shade!'\""
-    when '15415'; "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back!\" —Biggum Flodrot, goblin veteran"
-    when '15417'; "\"Next!\""
-    when '15421'; "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV"
-    when '15445'; "\"Ahh! Opposable digits!\""
-    when '16441'; "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir"
-    when '16629'; "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir"
-    else; value_of('flavor') #.gsub('"—', '" —').gsub('""', '" "')
-    end
+    return FLAVOR_TEXT[@multiverse_id] if @multiverse_id.in?(FLAVOR_TEXT)
+    value_of('flavor')#.gsub('"—', '" —').gsub('""', '" "')
   end
 
   def power
@@ -257,38 +259,42 @@ private
     @page.css('.contentTitle').text.strip.gsub(' // ', '/')
   end
 
+  ICONS = {
+    'White' => '{W}'
+    'Blue' =>  '{U}'
+    'Black' => '{B}'
+    'Red' =>   '{R}'
+    'Green' => '{G}'
+    'White or Blue' =>  '{W/U}'
+    'White or Black' => '{W/B}'
+    'Blue or Black' =>  '{U/B}'
+    'Blue or Red' =>    '{U/R}'
+    'Black or Red' =>   '{B/R}'
+    'Black or Green' => '{B/G}'
+    'Red or White' =>   '{R/W}'
+    'Red or Green' =>   '{R/G}'
+    'Green or White' => '{G/W}'
+    'Green or Blue' =>  '{G/U}'
+    'Two or White' => '{2/W}'
+    'Two or Blue' =>  '{2/U}'
+    'Two or Black' => '{2/B}'
+    'Two or Red' =>   '{2/R}'
+    'Two or Green' => '{2/G}'
+    'Phyrexian' =>       '{P}'
+    'Phyrexian White' => '{WP}'
+    'Phyrexian Blue' =>  '{UP}'
+    'Phyrexian Black' => '{BP}'
+    'Phyrexian Red' =>   '{RP}'
+    'Phyrexian Green' => '{GP}'
+    'Snow' =>  '{S}'
+    'Tap' =>   '{T}'
+    'Untap' => '{Q}'
+    'Variable Colorless' => '{X}'
+  }.freeze
   def translate_icon(name)
     case name
-    when 'White'; '{W}'
-    when 'Blue';  '{U}'
-    when 'Black'; '{B}'
-    when 'Red';   '{R}'
-    when 'Green'; '{G}'
-    when 'White or Blue';  '{W/U}'
-    when 'White or Black'; '{W/B}'
-    when 'Blue or Black';  '{U/B}'
-    when 'Blue or Red';    '{U/R}'
-    when 'Black or Red';   '{B/R}'
-    when 'Black or Green'; '{B/G}'
-    when 'Red or White';   '{R/W}'
-    when 'Red or Green';   '{R/G}'
-    when 'Green or White'; '{G/W}'
-    when 'Green or Blue';  '{G/U}'
-    when 'Two or White'; '{2/W}'
-    when 'Two or Blue';  '{2/U}'
-    when 'Two or Black'; '{2/B}'
-    when 'Two or Red';   '{2/R}'
-    when 'Two or Green'; '{2/G}'
-    when 'Phyrexian';       '{P}'
-    when 'Phyrexian White'; '{WP}'
-    when 'Phyrexian Blue';  '{UP}'
-    when 'Phyrexian Black'; '{BP}'
-    when 'Phyrexian Red';   '{RP}'
-    when 'Phyrexian Green'; '{GP}'
-    when 'Snow';  '{S}'
-    when 'Tap';   '{T}'
-    when 'Untap'; '{Q}'
-    when 'Variable Colorless'; '{X}'
+    when name.in?(ICONS)
+      ICONS[name]
     when /^(\d+)$/
       "{#{$1}}"
     else
