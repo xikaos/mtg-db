@@ -324,9 +324,36 @@
     "color_indicator": null
   },
   {
-    "name": "D'Avenant Archer",
+    "name": "Daraja Griffin",
     "set_name": "Classic Sixth Edition",
     "collector_num": "14",
+    "illustrator": "Stuart Griffin",
+    "types": [
+      "Creature"
+    ],
+    "supertypes": [],
+    "subtypes": [
+      "Griffin"
+    ],
+    "rarity": "Uncommon",
+    "mana_cost": "3W",
+    "converted_mana_cost": 4,
+    "oracle_text": [
+      "Flying",
+      "Sacrifice Daraja Griffin: Destroy target black creature."
+    ],
+    "flavor_text": "\"And the flamingos said, ‘Get out of our nest—we can't be seen with the likes of you' So, the griffin ate them.\"—Azeworai, \"The Ugly Bird\"",
+    "power": "2",
+    "toughness": "2",
+    "loyalty": null,
+    "multiverse_id": 15358,
+    "other_part": null,
+    "color_indicator": null
+  },
+  {
+    "name": "D'Avenant Archer",
+    "set_name": "Classic Sixth Edition",
+    "collector_num": "15",
     "illustrator": "Douglas Shuler",
     "types": [
       "Creature"
@@ -352,37 +379,10 @@
     "color_indicator": null
   },
   {
-    "name": "Daraja Griffin",
-    "set_name": "Classic Sixth Edition",
-    "collector_num": "15",
-    "illustrator": "Stuart Griffin",
-    "types": [
-      "Creature"
-    ],
-    "supertypes": [],
-    "subtypes": [
-      "Griffin"
-    ],
-    "rarity": "Uncommon",
-    "mana_cost": "3W",
-    "converted_mana_cost": 4,
-    "oracle_text": [
-      "Flying",
-      "Sacrifice Daraja Griffin: Destroy target black creature."
-    ],
-    "flavor_text": "\"And the flamingos said, ‘Get out of our nest—we can't be seen with the likes of you' So, the griffin ate them.\"—Azeworai, \"The Ugly Bird\"",
-    "power": "2",
-    "toughness": "2",
-    "loyalty": null,
-    "multiverse_id": 15358,
-    "other_part": null,
-    "color_indicator": null
-  },
-  {
     "name": "Disenchant",
     "set_name": "Classic Sixth Edition",
     "collector_num": "16",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Instant"
     ],
@@ -1142,7 +1142,7 @@
     "oracle_text": [
       "When Staunch Defenders enters the battlefield, you gain 4 life."
     ],
-    "flavor_text": "\"Hold your position Leave doubt for the dying\"—Tahngarth of the Weatherlight",
+    "flavor_text": "\"Hold your position! Leave doubt for the dying!\" —Tahngarth of the Weatherlight",
     "power": "3",
     "toughness": "4",
     "loyalty": null,
@@ -1287,7 +1287,7 @@
     "name": "Wall of Swords",
     "set_name": "Classic Sixth Edition",
     "collector_num": "51",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Creature"
     ],
@@ -2177,7 +2177,7 @@
     "oracle_text": [
       "Destroy target creature. It can't be regenerated. Its controller reveals cards from the top of his or her library until he or she reveals a creature card. The player puts that card onto the battlefield, then shuffles all other cards revealed this way into his or her library."
     ],
-    "flavor_text": "\"Ahh Opposable digits\"",
+    "flavor_text": "\"Ahh! Opposable digits!\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2288,7 +2288,7 @@
     "name": "Psychic Venom",
     "set_name": "Classic Sixth Edition",
     "collector_num": "91",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Enchantment"
     ],
@@ -2315,7 +2315,7 @@
     "name": "Recall",
     "set_name": "Classic Sixth Edition",
     "collector_num": "92",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Sorcery"
     ],
@@ -2454,7 +2454,7 @@
     "oracle_text": [
       "Islandwalk"
     ],
-    "flavor_text": "\"Leviathan, too Can you catch him with a fish-hook or run a line round his tongue?\"—The Bible, Job 41:1",
+    "flavor_text": "\"Leviathan, too! Can you catch him with a fish-hook or run a line round his tongue?\" —The Bible, Job 41:1",
     "power": "3",
     "toughness": "3",
     "loyalty": null,
@@ -3134,7 +3134,7 @@
     "name": "Dry Spell",
     "set_name": "Classic Sixth Edition",
     "collector_num": "124",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Sorcery"
     ],
@@ -3227,7 +3227,7 @@
       "Flying",
       "Sacrifice a creature: Fallen Angel gets +2/+1 until end of turn."
     ],
-    "flavor_text": "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\"Baron Sengir",
+    "flavor_text": "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir",
     "power": "3",
     "toughness": "3",
     "loyalty": null,
@@ -3531,7 +3531,7 @@
     "oracle_text": [
       "Draw four cards. You lose half your life, rounded up."
     ],
-    "flavor_text": "\"But I signed nothing\"—Taraneh, Suq'Ata mage",
+    "flavor_text": "\"But I signed nothing!\" —Taraneh, Suq'Ata mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4194,7 +4194,7 @@
     "oracle_text": [
       "{R}, {T}: Anaba Shaman deals 1 damage to target creature or player."
     ],
-    "flavor_text": "\"The shamans? Ha They are craven cows not capable of true magic.\"—Irini Sengir",
+    "flavor_text": "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -4231,7 +4231,7 @@
     "name": "Balduvian Horde",
     "set_name": "Classic Sixth Edition",
     "collector_num": "167",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Creature"
     ],
@@ -4348,7 +4348,7 @@
       "Enchant land",
       "You control enchanted land."
     ],
-    "flavor_text": "\"Why do we trade with those despicable elves? You don't live in forests, you burn them\"—Avram Garrisson,Leader of the Knights of Stromgald",
+    "flavor_text": "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4423,7 +4423,7 @@
     "oracle_text": [
       "Creatures you control have haste. (They can attack and {T} as soon as they come under your control.)"
     ],
-    "flavor_text": "\"If your blood doesn't run hot, I will make it run in the sands\"—Maraxus of Keld",
+    "flavor_text": "\"If your blood doesn't run hot, I will make it run in the sands!\" —Maraxus of Keld",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4600,7 +4600,7 @@
       "Enchant creature",
       "Enchanted creature gets +2/+2."
     ],
-    "flavor_text": "\"O it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\"—William Shakespeare,Measure for Measure",
+    "flavor_text": "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4626,7 +4626,7 @@
     "oracle_text": [
       "{T}, Sacrifice Goblin Digging Team: Destroy target Wall."
     ],
-    "flavor_text": "\"From down here we can make the whole wall collapse\"\"Uh, yeah, boss, but how do we get out?\"",
+    "flavor_text": "\"From down here we can make the whole wall collapse!\"\"Uh, yeah, boss, but how do we get out?\"",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -4677,7 +4677,7 @@
     "mana_cost": "2R",
     "converted_mana_cost": 3,
     "oracle_text": [],
-    "flavor_text": "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back\"—Biggum Flodrot, goblin veteran",
+    "flavor_text": "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back!\" —Biggum Flodrot, goblin veteran",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -4729,7 +4729,7 @@
     "oracle_text": [
       "When Goblin Recruiter enters the battlefield, search your library for any number of Goblin cards and reveal those cards. Shuffle your library, then put them on top of it in any order."
     ],
-    "flavor_text": "\"Next\"",
+    "flavor_text": "\"Next!\"",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -4753,7 +4753,7 @@
     "oracle_text": [
       "{2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield."
     ],
-    "flavor_text": "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\"    Sarpadian Empires, vol. IV",
+    "flavor_text": "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4852,7 +4852,7 @@
     "oracle_text": [
       "Inferno deals 6 damage to each creature and each player."
     ],
-    "flavor_text": "\"Some have said there is no subtlety to destruction. You know what? They're dead.\"  Jaya Ballard, task mage",
+    "flavor_text": "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5049,7 +5049,7 @@
     "oracle_text": [
       "Pyrotechnics deals 4 damage divided as you choose among any number of target creatures and/or players."
     ],
-    "flavor_text": "\"Hiniya Behold the man of flint, that's me / Four lightnings zigzag from me, strike and return.\"—Navajo war chant",
+    "flavor_text": "\"Hi! ni! ya! Behold the man of flint, that's me! / Four lightnings zigzag from me, strike and return.\" —Navajo war chant",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5153,7 +5153,7 @@
     "oracle_text": [
       "First strike"
     ],
-    "flavor_text": "\"I fear anything with teeth measured in handspans\"—Norin the Wary",
+    "flavor_text": "\"I fear anything with teeth measured in handspans!\" —Norin the Wary",
     "power": "2",
     "toughness": "1",
     "loyalty": null,
@@ -5264,7 +5264,7 @@
     "name": "Spitting Earth",
     "set_name": "Classic Sixth Edition",
     "collector_num": "208",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Sorcery"
     ],
@@ -5733,7 +5733,7 @@
     "oracle_text": [
       "First strike"
     ],
-    "flavor_text": "\"I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, ‘Well, at least now we're fighting in the shade'\"",
+    "flavor_text": "\"I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, ‘Well, at least now we're fighting in the shade!'\"",
     "power": "2",
     "toughness": "1",
     "loyalty": null,
@@ -7296,9 +7296,33 @@
     "color_indicator": null
   },
   {
-    "name": "Howling Mine",
+    "name": "The Hive",
     "set_name": "Classic Sixth Edition",
     "collector_num": "289",
+    "illustrator": "Sandra Everingham",
+    "types": [
+      "Artifact"
+    ],
+    "supertypes": [],
+    "subtypes": [],
+    "rarity": "Rare",
+    "mana_cost": "5",
+    "converted_mana_cost": 5,
+    "oracle_text": [
+      "{5}, {T}: Put a 1/1 colorless Insect artifact creature token with flying named Wasp onto the battlefield. (It can't be blocked except by creatures with flying or reach.)"
+    ],
+    "flavor_text": "Mouths and wings beyond numbering, but a single mind to guide them.",
+    "power": null,
+    "toughness": null,
+    "loyalty": null,
+    "multiverse_id": 11530,
+    "other_part": null,
+    "color_indicator": null
+  },
+  {
+    "name": "Howling Mine",
+    "set_name": "Classic Sixth Edition",
+    "collector_num": "290",
     "illustrator": "Mark Poole",
     "types": [
       "Artifact"
@@ -7322,7 +7346,7 @@
   {
     "name": "Iron Star",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "290",
+    "collector_num": "291",
     "illustrator": "Donato Giancola",
     "types": [
       "Artifact"
@@ -7346,7 +7370,7 @@
   {
     "name": "Ivory Cup",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "291",
+    "collector_num": "292",
     "illustrator": "Donato Giancola",
     "types": [
       "Artifact"
@@ -7370,7 +7394,7 @@
   {
     "name": "Jade Monolith",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "292",
+    "collector_num": "293",
     "illustrator": "Richard Kane Ferguson",
     "types": [
       "Artifact"
@@ -7394,7 +7418,7 @@
   {
     "name": "Jalum Tome",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "293",
+    "collector_num": "294",
     "illustrator": "Tom Wänerstrand",
     "types": [
       "Artifact"
@@ -7418,7 +7442,7 @@
   {
     "name": "Jayemdae Tome",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "294",
+    "collector_num": "295",
     "illustrator": "Mark Tedin",
     "types": [
       "Artifact"
@@ -7442,7 +7466,7 @@
   {
     "name": "Lead Golem",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "295",
+    "collector_num": "296",
     "illustrator": "Hannibal King",
     "types": [
       "Artifact",
@@ -7469,7 +7493,7 @@
   {
     "name": "Mana Prism",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "296",
+    "collector_num": "297",
     "illustrator": "Margaret Organ-Kean",
     "types": [
       "Artifact"
@@ -7494,7 +7518,7 @@
   {
     "name": "Marble Diamond",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "297",
+    "collector_num": "298",
     "illustrator": "Jeff Miracola",
     "types": [
       "Artifact"
@@ -7519,7 +7543,7 @@
   {
     "name": "Meekstone",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "298",
+    "collector_num": "299",
     "illustrator": "Quinton Hoover",
     "types": [
       "Artifact"
@@ -7543,7 +7567,7 @@
   {
     "name": "Millstone",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "299",
+    "collector_num": "300",
     "illustrator": "Kaja Foglio",
     "types": [
       "Artifact"
@@ -7567,7 +7591,7 @@
   {
     "name": "Moss Diamond",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "300",
+    "collector_num": "301",
     "illustrator": "Donato Giancola",
     "types": [
       "Artifact"
@@ -7592,7 +7616,7 @@
   {
     "name": "Mystic Compass",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "301",
+    "collector_num": "302",
     "illustrator": "Amy Weber",
     "types": [
       "Artifact"
@@ -7616,7 +7640,7 @@
   {
     "name": "Obsianus Golem",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "302",
+    "collector_num": "303",
     "illustrator": "Jesper Myrfors",
     "types": [
       "Artifact",
@@ -7641,7 +7665,7 @@
   {
     "name": "Ornithopter",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "303",
+    "collector_num": "304",
     "illustrator": "Amy Weber",
     "types": [
       "Artifact",
@@ -7668,7 +7692,7 @@
   {
     "name": "Patagia Golem",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "304",
+    "collector_num": "305",
     "illustrator": "Scott Kirschner",
     "types": [
       "Artifact",
@@ -7695,7 +7719,7 @@
   {
     "name": "Pentagram of the Ages",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "305",
+    "collector_num": "306",
     "illustrator": "Douglas Shuler",
     "types": [
       "Artifact"
@@ -7719,7 +7743,7 @@
   {
     "name": "Phyrexian Vault",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "306",
+    "collector_num": "307",
     "illustrator": "Hannibal King",
     "types": [
       "Artifact"
@@ -7743,7 +7767,7 @@
   {
     "name": "Primal Clay",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "307",
+    "collector_num": "308",
     "illustrator": "Adam Rex",
     "types": [
       "Artifact",
@@ -7770,7 +7794,7 @@
   {
     "name": "Rod of Ruin",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "308",
+    "collector_num": "309",
     "illustrator": "Christopher Rush",
     "types": [
       "Artifact"
@@ -7794,7 +7818,7 @@
   {
     "name": "Skull Catapult",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "309",
+    "collector_num": "310",
     "illustrator": "Ian Miller",
     "types": [
       "Artifact"
@@ -7818,7 +7842,7 @@
   {
     "name": "Sky Diamond",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "310",
+    "collector_num": "311",
     "illustrator": "D. Alexander Gregory",
     "types": [
       "Artifact"
@@ -7843,7 +7867,7 @@
   {
     "name": "Snake Basket",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "311",
+    "collector_num": "312",
     "illustrator": "Roger Raupp",
     "types": [
       "Artifact"
@@ -7867,7 +7891,7 @@
   {
     "name": "Soul Net",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "312",
+    "collector_num": "313",
     "illustrator": "Andrew Robinson",
     "types": [
       "Artifact"
@@ -7891,7 +7915,7 @@
   {
     "name": "Storm Cauldron",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "313",
+    "collector_num": "314",
     "illustrator": "Dan Frazier",
     "types": [
       "Artifact"
@@ -7916,7 +7940,7 @@
   {
     "name": "Teferi's Puzzle Box",
     "set_name": "Classic Sixth Edition",
-    "collector_num": "314",
+    "collector_num": "315",
     "illustrator": "Kaja Foglio",
     "types": [
       "Artifact"
@@ -7934,30 +7958,6 @@
     "toughness": null,
     "loyalty": null,
     "multiverse_id": 15410,
-    "other_part": null,
-    "color_indicator": null
-  },
-  {
-    "name": "The Hive",
-    "set_name": "Classic Sixth Edition",
-    "collector_num": "315",
-    "illustrator": "Sandra Everingham",
-    "types": [
-      "Artifact"
-    ],
-    "supertypes": [],
-    "subtypes": [],
-    "rarity": "Rare",
-    "mana_cost": "5",
-    "converted_mana_cost": 5,
-    "oracle_text": [
-      "{5}, {T}: Put a 1/1 colorless Insect artifact creature token with flying named Wasp onto the battlefield. (It can't be blocked except by creatures with flying or reach.)"
-    ],
-    "flavor_text": "Mouths and wings beyond numbering, but a single mind to guide them.",
-    "power": null,
-    "toughness": null,
-    "loyalty": null,
-    "multiverse_id": 11530,
     "other_part": null,
     "color_indicator": null
   },

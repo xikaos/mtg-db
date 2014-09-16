@@ -79,7 +79,17 @@ class Card
     end
   end
 
+  COLLECTOR_NUMS = {
+    # Classic Sixth Edition
+    '15358'=>'14','14472'=>'15','11530'=>'289','14777'=>'290','14761'=>'291','14759'=>'292',
+    '11355'=>'293','14778'=>'294','14780'=>'295','15407'=>'296','15439'=>'297','15441'=>'298',
+    '14781'=>'299','14782'=>'300','15442'=>'301','15435'=>'302','15401'=>'303','14767'=>'304',
+    '15408'=>'305','14784'=>'306','15436'=>'307','11454'=>'308','14768'=>'309','11503'=>'310',
+    '15443'=>'311','15409'=>'312','14769'=>'313','15402'=>'314','15410'=>'315'
+  }
   def collector_num
+    return COLLECTOR_NUMS[@multiverse_id] if @multiverse_id.in?(COLLECTOR_NUMS)
+
     # Gatherer does some weird shit with the numbers for split cards. Calculate
     # the correct number using the order of the "(Fire // Ice)" name
     if split_card?
@@ -87,6 +97,14 @@ class Card
       return available_numbers[ split_card_name.split('/').index(@given_name) ]
     end
     value_of('number')
+  end
+
+  def illustrator
+    # TODO: Fix for split cards with different illustrators
+    case artist = value_of('artist')
+    when 'Brian Snoddy'; 'Brian Snõddy'
+    else; artist
+    end
   end
 
   def types
@@ -133,6 +151,29 @@ class Card
       end
       line.text.strip.presence
     end.compact
+  end
+
+  def flavor_text
+    case @multiverse_id # Exceptions
+    when '11212'; "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald"
+    when '11303'; "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure"
+    when '11340'; "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage"
+    when '11476'; "\"I fear anything with teeth measured in handspans!\" —Norin the Wary"
+    when '14490'; "\"Hold your position! Leave doubt for the dying!\" —Tahngarth of the Weatherlight"
+    when '14538'; "\"Leviathan, too! Can you catch him with a fish-hook or run a line round his tongue?\" —The Bible, Job 41:1"
+    when '14604'; "\"But I signed nothing!\" —Taraneh, Suq'Ata mage"
+    when '14611'; "\"Hi! ni! ya! Behold the man of flint, that's me! / Four lightnings zigzag from me, strike and return.\" —Navajo war chant"
+    when '14618'; "\"From down here we can make the whole wall collapse!\"\"Uh, yeah, boss, but how do we get out?\""
+    when '14648'; "\"If your blood doesn't run hot, I will make it run in the sands!\" —Maraxus of Keld"
+    when '14716'; "\"I tell you, there was so many arrows flying about you couldn't hardly see the sun. So I says to young Angus, ‘Well, at least now we're fighting in the shade!'\""
+    when '15415'; "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back!\" —Biggum Flodrot, goblin veteran"
+    when '15417'; "\"Next!\""
+    when '15421'; "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV"
+    when '15445'; "\"Ahh! Opposable digits!\""
+    when '16441'; "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir"
+    when '16629'; "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir"
+    else; value_of('flavor') #.gsub('"—', '" —').gsub('""', '" "')
+    end
   end
 
   def power
@@ -185,7 +226,7 @@ class Card
       'name'                => name,
       'set_name'            => value_of('set'),
       'collector_num'       => collector_num,
-      'illustrator'         => value_of('artist'), # TODO: Fix for split cards with different illustrators
+      'illustrator'         => illustrator,
       'types'               => types,
       'supertypes'          => supertypes,
       'subtypes'            => subtypes,
@@ -193,7 +234,7 @@ class Card
       'mana_cost'           => mana_cost,
       'converted_mana_cost' => value_of('cmc').to_i,
       'oracle_text'         => oracle_text,
-      'flavor_text'         => value_of('flavor'),
+      'flavor_text'         => flavor_text,
       'power'               => power,
       'toughness'           => toughness,
       'loyalty'             => loyalty,
