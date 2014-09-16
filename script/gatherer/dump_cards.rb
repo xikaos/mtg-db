@@ -25,16 +25,6 @@ class CardDumper
       num_pages = (num_results / 100.0).ceil; page += 1
     end; processed.flatten!
 
-    # For older sets without collector_nums, assign numbers based on multiverse_id
-    if processed.any?{|c| c['collector_num'].blank?}
-      if processed.any?{|c| c['collector_num'].present?}
-        raise "Some cards have collector_num, some don't."
-      end
-      processed.sort_by{|c| c['multiverse_id']}.each_with_index do |card, i|
-        card['collector_num'] = (i+1).to_s
-      end
-    end
-
     processed.sort_by do |card|
       [card['collector_num'].to_i, card['collector_num']]
     end
@@ -88,7 +78,9 @@ class Card
       available_numbers = @page.css('.row[id*="_numberRow"] .value').map{|div| div.text.strip}.sort
       return available_numbers[ split_card_name.split('/').index(@given_name) ]
     end
-    value_of('number')
+    value_of('number').tap do |val|
+      raise "Found a card without a collector_num: #{@given_name}" if val.empty?
+    end
   end
 
   def illustrator
