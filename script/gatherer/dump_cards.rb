@@ -40,8 +40,8 @@ class CardDumper
   end
 
   CARDS_TO_SKIP = [
-    # Eighth Edition Box Set
-    '47784', '47787', '47785', '47786', '49056', '47788', '47789'
+    '47784', '47787', '47785', '47786', '49056', '47788', '47789', # Eighth Edition Box Set
+    '83064', '83319', '84073', '83104', '94912', '94911', '94910', '83075', '94914' # Ninth Edition Box Set
   ]
   def process_page(page)
     page.css('.cardItem').map do |row|
@@ -177,7 +177,14 @@ class Card
     '15445' => "\"Ahh! Opposable digits!\"",
     '16441' => "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir",
     '16629' => "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir",
-    '45187' => "\"Over the silver mountains,Where spring the nectar fountains, There will I kiss The bowl of bliss; And drink my everlasting fill. . . .\" —Sir Walter Raleigh, \"The Pilgrimage\""
+    '45187' => "\"Over the silver mountains, Where spring the nectar fountains, There will I kiss The bowl of bliss; And drink my everlasting fill. . . .\" —Sir Walter Raleigh, \"The Pilgrimage\"",
+    '83121' => "\"The day of Spirits; my soul's calm retreat / Which none disturb!\" —Henry Vaughan, \"The Night\"",
+    '83145' => "\"Catch!\"",
+    '83167' => "\"Guess where I'm gonna plant this!\"",
+    '83240' => "\"Over the silver mountains, Where spring the nectar fountains, There will I kiss The bowl of bliss; And drink my everlasting fill. . . .\" —Sir Walter Raleigh, \"The Pilgrimage\"",
+    '83292' => "\"Rats, rats, rats! Hundreds, thousands, millions of them, and every one a life.\" —Bram Stoker, Dracula",
+    '83446' => "\"Who's the crazy one now!?\" —Torgle, mountaintop boatmaker",
+    '84552' => "\"The hour of your redemption is here. . . . Rally to me. . . . rise and strike. Strike at every favorable opportunity. For your homes and hearths, strike!\" —General Douglas MacArthur, to the people of the Philippines"
   }.freeze
   def flavor_text
     return FLAVOR_TEXT[@multiverse_id] if @multiverse_id.in?(FLAVOR_TEXT)

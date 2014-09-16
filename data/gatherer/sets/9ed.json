@@ -1,26 +1,28 @@
 [
   {
-    "name": "Eager Cadet",
+    "name": "Angel of Mercy",
     "set_name": "Ninth Edition",
     "collector_num": "1",
-    "illustrator": "Scott M. Fischer",
+    "illustrator": "Melissa A. Benson",
     "types": [
       "Creature"
     ],
     "supertypes": [],
     "subtypes": [
-      "Human",
-      "Soldier"
+      "Angel"
     ],
-    "rarity": "Common",
-    "mana_cost": "W",
-    "converted_mana_cost": 1,
-    "oracle_text": [],
-    "flavor_text": "\"Training? Seeing my crops burnt to cinders was all the ‘training' I needed.\"",
-    "power": "1",
-    "toughness": "1",
+    "rarity": "Uncommon",
+    "mana_cost": "4W",
+    "converted_mana_cost": 5,
+    "oracle_text": [
+      "Flying",
+      "When Angel of Mercy enters the battlefield, you gain 3 life."
+    ],
+    "flavor_text": null,
+    "power": "3",
+    "toughness": "3",
     "loyalty": null,
-    "multiverse_id": 83064,
+    "multiverse_id": 82992,
     "other_part": null,
     "color_indicator": null
   },
@@ -105,26 +107,29 @@
     "color_indicator": null
   },
   {
-    "name": "Index",
+    "name": "Ballista Squad",
     "set_name": "Ninth Edition",
     "collector_num": "5",
-    "illustrator": "Kev Walker",
+    "illustrator": "Matthew D. Wilson",
     "types": [
-      "Sorcery"
+      "Creature"
     ],
     "supertypes": [],
-    "subtypes": [],
-    "rarity": "Common",
-    "mana_cost": "U",
-    "converted_mana_cost": 1,
-    "oracle_text": [
-      "Look at the top five cards of your library, then put them back in any order."
+    "subtypes": [
+      "Human",
+      "Rebel"
     ],
-    "flavor_text": "\"Let's see . . . Mercadia, mercenary, merfolk . . . you know, I really need a better filing system.\"",
-    "power": null,
-    "toughness": null,
+    "rarity": "Uncommon",
+    "mana_cost": "3W",
+    "converted_mana_cost": 4,
+    "oracle_text": [
+      "{X}{W}, {T}: Ballista Squad deals X damage to target attacking or blocking creature."
+    ],
+    "flavor_text": "The perfect antidote for a tightly packed formation.",
+    "power": "2",
+    "toughness": "2",
     "loyalty": null,
-    "multiverse_id": 94912,
+    "multiverse_id": 84508,
     "other_part": null,
     "color_indicator": null
   },
@@ -156,27 +161,29 @@
     "color_indicator": null
   },
   {
-    "name": "Vizzerdrix",
+    "name": "Blinding Angel",
     "set_name": "Ninth Edition",
     "collector_num": "7",
-    "illustrator": "Dave Dorman",
+    "illustrator": "Todd Lockwood",
     "types": [
       "Creature"
     ],
     "supertypes": [],
     "subtypes": [
-      "Rabbit",
-      "Beast"
+      "Angel"
     ],
     "rarity": "Rare",
-    "mana_cost": "6U",
-    "converted_mana_cost": 7,
-    "oracle_text": [],
-    "flavor_text": "A bored wizard once created a vizzerdrix out of a bunny and a piranha. He never made that mistake again.",
-    "power": "6",
-    "toughness": "6",
+    "mana_cost": "3WW",
+    "converted_mana_cost": 5,
+    "oracle_text": [
+      "Flying (This creature can't be blocked except by creatures with flying or reach.)",
+      "Whenever Blinding Angel deals combat damage to a player, that player skips his or her next combat phase."
+    ],
+    "flavor_text": "\"Their eyes will shrivel and blacken before faith's true light.\"",
+    "power": "2",
+    "toughness": "4",
     "loyalty": null,
-    "multiverse_id": 94911,
+    "multiverse_id": 83007,
     "other_part": null,
     "color_indicator": null
   },
@@ -207,26 +214,26 @@
     "color_indicator": null
   },
   {
-    "name": "Enormous Baloth",
+    "name": "Chastise",
     "set_name": "Ninth Edition",
     "collector_num": "9",
-    "illustrator": "Mark Tedin",
+    "illustrator": "Carl Critchlow",
     "types": [
-      "Creature"
+      "Instant"
     ],
     "supertypes": [],
-    "subtypes": [
-      "Beast"
-    ],
+    "subtypes": [],
     "rarity": "Uncommon",
-    "mana_cost": "6G",
-    "converted_mana_cost": 7,
-    "oracle_text": [],
-    "flavor_text": "Its diet consists of fruits, plants, small woodland animals, large woodland animals, woodlands, fruit groves, fruit farmers, and small cities.",
-    "power": "7",
-    "toughness": "7",
+    "mana_cost": "3W",
+    "converted_mana_cost": 4,
+    "oracle_text": [
+      "Destroy target attacking creature. You gain life equal to its power."
+    ],
+    "flavor_text": "\"Why do we pray to the Ancestor? Because She listens.\"—Mystic elder",
+    "power": null,
+    "toughness": null,
     "loyalty": null,
-    "multiverse_id": 83075,
+    "multiverse_id": 83021,
     "other_part": null,
     "color_indicator": null
   },
@@ -5089,7 +5096,7 @@
     "name": "Lava Axe",
     "set_name": "Ninth Edition",
     "collector_num": "200",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Sorcery"
     ],
@@ -8310,13 +8317,13 @@
     "name": "Urza's Mine",
     "set_name": "Ninth Edition",
     "collector_num": "327",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Mine"
     ],
     "rarity": "Uncommon",
@@ -8337,13 +8344,13 @@
     "name": "Urza's Power Plant",
     "set_name": "Ninth Edition",
     "collector_num": "328",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Power-Plant"
     ],
     "rarity": "Uncommon",
@@ -8364,13 +8371,13 @@
     "name": "Urza's Tower",
     "set_name": "Ninth Edition",
     "collector_num": "329",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Tower"
     ],
     "rarity": "Uncommon",
