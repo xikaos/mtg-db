@@ -1,26 +1,28 @@
 [
   {
-    "name": "Eager Cadet",
+    "name": "Angel of Mercy",
     "set_name": "Eighth Edition",
     "collector_num": "1",
-    "illustrator": "Greg & Tim Hildebrandt",
+    "illustrator": "Melissa A. Benson",
     "types": [
       "Creature"
     ],
     "supertypes": [],
     "subtypes": [
-      "Human",
-      "Soldier"
+      "Angel"
     ],
-    "rarity": "Common",
-    "mana_cost": "W",
-    "converted_mana_cost": 1,
-    "oracle_text": [],
-    "flavor_text": "\"Training? Seeing my crops burnt to cinders was all the ‘training' I needed.\"",
-    "power": "1",
-    "toughness": "1",
+    "rarity": "Uncommon",
+    "mana_cost": "4W",
+    "converted_mana_cost": 5,
+    "oracle_text": [
+      "Flying",
+      "When Angel of Mercy enters the battlefield, you gain 3 life."
+    ],
+    "flavor_text": "A song of life soars over fields of blood.",
+    "power": "3",
+    "toughness": "3",
     "loyalty": null,
-    "multiverse_id": 47784,
+    "multiverse_id": 45195,
     "other_part": null,
     "color_indicator": null
   },
@@ -80,28 +82,30 @@
     "color_indicator": null
   },
   {
-    "name": "Sea Eagle",
+    "name": "Avatar of Hope",
     "set_name": "Eighth Edition",
     "collector_num": "4",
-    "illustrator": "Anthony S. Waters",
+    "illustrator": "Mark Zug",
     "types": [
       "Creature"
     ],
     "supertypes": [],
     "subtypes": [
-      "Bird"
+      "Avatar"
     ],
-    "rarity": "Common",
-    "mana_cost": "1U",
-    "converted_mana_cost": 2,
+    "rarity": "Rare",
+    "mana_cost": "6WW",
+    "converted_mana_cost": 8,
     "oracle_text": [
-      "Flying"
+      "If you have 3 or less life, Avatar of Hope costs {6} less to cast.",
+      "Flying",
+      "Avatar of Hope can block any number of creatures."
     ],
-    "flavor_text": "Where air meets water, fish meets talon.",
-    "power": "1",
-    "toughness": "1",
+    "flavor_text": null,
+    "power": "4",
+    "toughness": "9",
     "loyalty": null,
-    "multiverse_id": 47786,
+    "multiverse_id": 46617,
     "other_part": null,
     "color_indicator": null
   },
@@ -4997,7 +5001,7 @@
     "name": "Lava Axe",
     "set_name": "Eighth Edition",
     "collector_num": "197",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Sorcery"
     ],
@@ -8314,13 +8318,13 @@
     "name": "Urza's Mine",
     "set_name": "Eighth Edition",
     "collector_num": "328",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Mine"
     ],
     "rarity": "Uncommon",
@@ -8341,13 +8345,13 @@
     "name": "Urza's Power Plant",
     "set_name": "Eighth Edition",
     "collector_num": "329",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Power-Plant"
     ],
     "rarity": "Uncommon",
@@ -8368,13 +8372,13 @@
     "name": "Urza's Tower",
     "set_name": "Eighth Edition",
     "collector_num": "330",
-    "illustrator": "Brian Snoddy",
+    "illustrator": "Brian Snõddy",
     "types": [
       "Land"
     ],
     "supertypes": [],
     "subtypes": [
-      "Urza’s",
+      "Urza's",
       "Tower"
     ],
     "rarity": "Uncommon",

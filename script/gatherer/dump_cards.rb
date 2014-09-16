@@ -39,13 +39,18 @@ class CardDumper
     end
   end
 
+  CARDS_TO_SKIP = [
+    # Eighth Edition Box Set
+    '47784', '47787', '47785', '47786', '49056', '47788', '47789'
+  ]
   def process_page(page)
     page.css('.cardItem').map do |row|
       card_name = row.css('.name').text.strip
       row.css('.printings a').map do |a|
         printing_id = a.href.match(/multiverseid=(\d+)/)[1]
+        next if printing_id.in?(CARDS_TO_SKIP)
         Card.new(card_name, printing_id).as_json
-      end
+      end.compact
     end
   end
 
@@ -114,7 +119,8 @@ class Card
     (value_of('type').split("—").map(&:strip)[0].split(' ') & SUPERTYPES) || []
   end
   def subtypes
-    value_of('type').split("—").map(&:strip)[1].split(' ') rescue []
+    vals = value_of('type').split("—").map(&:strip)[1].split(' ') rescue []
+    vals.map{|val| val == "Urza’s" ? "Urza's" : val}
   end
 
   def mana_cost
@@ -154,7 +160,6 @@ class Card
   end
 
   FLAVOR_TEXT = {
-    # Classic Sixth Edition
     '11212' => "\"Why do we trade with those despicable elves? You don't live in forests, you burn them!\" —Avram Garrisson,Leader of the Knights of Stromgald",
     '11303' => "\"O! it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",
     '11340' => "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage",
@@ -171,7 +176,8 @@ class Card
     '15421' => "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV",
     '15445' => "\"Ahh! Opposable digits!\"",
     '16441' => "\"The shamans? Ha! They are craven cows not capable of true magic.\" —Irini Sengir",
-    '16629' => "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir"
+    '16629' => "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir",
+    '45187' => "\"Over the silver mountains,Where spring the nectar fountains, There will I kiss The bowl of bliss; And drink my everlasting fill. . . .\" —Sir Walter Raleigh, \"The Pilgrimage\""
   }.freeze
   def flavor_text
     return FLAVOR_TEXT[@multiverse_id] if @multiverse_id.in?(FLAVOR_TEXT)
@@ -260,45 +266,44 @@ private
   end
 
   ICONS = {
-    'White' => '{W}'
-    'Blue' =>  '{U}'
-    'Black' => '{B}'
-    'Red' =>   '{R}'
-    'Green' => '{G}'
-    'White or Blue' =>  '{W/U}'
-    'White or Black' => '{W/B}'
-    'Blue or Black' =>  '{U/B}'
-    'Blue or Red' =>    '{U/R}'
-    'Black or Red' =>   '{B/R}'
-    'Black or Green' => '{B/G}'
-    'Red or White' =>   '{R/W}'
-    'Red or Green' =>   '{R/G}'
-    'Green or White' => '{G/W}'
-    'Green or Blue' =>  '{G/U}'
-    'Two or White' => '{2/W}'
-    'Two or Blue' =>  '{2/U}'
-    'Two or Black' => '{2/B}'
-    'Two or Red' =>   '{2/R}'
-    'Two or Green' => '{2/G}'
-    'Phyrexian' =>       '{P}'
-    'Phyrexian White' => '{WP}'
-    'Phyrexian Blue' =>  '{UP}'
-    'Phyrexian Black' => '{BP}'
-    'Phyrexian Red' =>   '{RP}'
-    'Phyrexian Green' => '{GP}'
-    'Snow' =>  '{S}'
-    'Tap' =>   '{T}'
-    'Untap' => '{Q}'
+    'White' => '{W}',
+    'Blue' =>  '{U}',
+    'Black' => '{B}',
+    'Red' =>   '{R}',
+    'Green' => '{G}',
+    'White or Blue' =>  '{W/U}',
+    'White or Black' => '{W/B}',
+    'Blue or Black' =>  '{U/B}',
+    'Blue or Red' =>    '{U/R}',
+    'Black or Red' =>   '{B/R}',
+    'Black or Green' => '{B/G}',
+    'Red or White' =>   '{R/W}',
+    'Red or Green' =>   '{R/G}',
+    'Green or White' => '{G/W}',
+    'Green or Blue' =>  '{G/U}',
+    'Two or White' => '{2/W}',
+    'Two or Blue' =>  '{2/U}',
+    'Two or Black' => '{2/B}',
+    'Two or Red' =>   '{2/R}',
+    'Two or Green' => '{2/G}',
+    'Phyrexian' =>       '{P}',
+    'Phyrexian White' => '{WP}',
+    'Phyrexian Blue' =>  '{UP}',
+    'Phyrexian Black' => '{BP}',
+    'Phyrexian Red' =>   '{RP}',
+    'Phyrexian Green' => '{GP}',
+    'Snow' =>  '{S}',
+    'Tap' =>   '{T}',
+    'Untap' => '{Q}',
     'Variable Colorless' => '{X}'
   }.freeze
-  def translate_icon(name)
-    case name
-    when name.in?(ICONS)
-      ICONS[name]
-    when /^(\d+)$/
+  def translate_icon(icon_alt)
+    if icon_alt.in?(ICONS)
+      ICONS[icon_alt]
+    elsif icon_alt =~ /^(\d+)$/
       "{#{$1}}"
     else
-      raise "Unknown icon: #{name}"
+      raise "Unknown icon: #{icon}"
     end
   end
 end
