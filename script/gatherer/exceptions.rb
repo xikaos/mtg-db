@@ -49,7 +49,15 @@ FLAVOR_TEXT = {
   '83240' => "\"Over the silver mountains, Where spring the nectar fountains, There will I kiss The bowl of bliss; And drink my everlasting fill. . . .\" —Sir Walter Raleigh, \"The Pilgrimage\"",
   '83292' => "\"Rats, rats, rats! Hundreds, thousands, millions of them, and every one a life.\" —Bram Stoker, Dracula",
   '83446' => "\"Who's the crazy one now!?\" —Torgle, mountaintop boatmaker",
-  '84552' => "\"The hour of your redemption is here. . . . Rally to me. . . . rise and strike. Strike at every favorable opportunity. For your homes and hearths, strike!\" —General Douglas MacArthur, to the people of the Philippines"
+  '84552' => "\"The hour of your redemption is here. . . . Rally to me. . . . rise and strike. Strike at every favorable opportunity. For your homes and hearths, strike!\" —General Douglas MacArthur, to the people of the Philippines",
+  '106473' => "\"Some goblins are expendable. Some are impossible to get rid of. But he's both—at the same time!\" —Starke",
+  '129579' => "\"Boss told us to try and train 'em. Trained it to attack—it ate Flugg. Trained it to run fast—it got away. Success!\" —Dlig, goblin spelunker",
+  '129596' => "\"Hmm . . . It looks kinda like a bug. Let's crack it open an' see if it tastes like one!\" —Squee, goblin cabin hand",
+  '129620' => "\"Catch!\"",
+  '129642' => "\"Guess where I'm gonna plant this!\"",
+  '129908' => "\"Nature? Fire? Bah! Both are chaotic and difficult to control. Ice is structured, latticed, light as a feather, massive as a glacier. In ice, there is power!\" —Heidar, Rimewind master",
+  '134748' => "\"I got it! I got it! I—\"",
+  '135282' => "\"Let the forest spread! From salt, stone, and fen, let the new trees rise.\" —Molimo, maro-sorcerer"
 }.freeze
 
 POWER = {
