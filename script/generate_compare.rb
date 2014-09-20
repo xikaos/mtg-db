@@ -17,10 +17,11 @@ def run(*set_codes)
 
   puts "Found #{mgci_cards.count} MGCI cards."
   puts "Found #{gath_cards.count} GATH cards."
-
-  codes = sets_to_include.map{|s| s['code']}.join('.')
-  write("compare/sorted-mgci-#{codes}.json", mgci_cards)
-  write("compare/sorted-gath-#{codes}.json", gath_cards)
+  if mgci_cards.count > 0 && mgci_cards.count == gath_cards.count
+    codes = sets_to_include.map{|s| s['code']}.join('.')
+    write("compare/sorted-mgci-#{codes}.json", mgci_cards)
+    write("compare/sorted-gath-#{codes}.json", gath_cards)
+  end
 end
 
 run(*ARGV)
