@@ -24,6 +24,7 @@ class CardDumper
       num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).last.join.to_i
       num_pages = (num_results / 100.0).ceil; page += 1
     end; processed.flatten!
+    processed << S00_RHOX if @set['code'] == 's00'
 
     processed.sort_by do |card|
       [card['collector_num'].to_i, card['collector_num']]
@@ -67,6 +68,10 @@ class Card
     else
       card_name
     end
+  end
+
+  def set_name
+    @_set_name ||= value_of('set')
   end
 
   def collector_num
@@ -180,7 +185,7 @@ class Card
     load_content
     {
       'name'                => name,
-      'set_name'            => value_of('set'),
+      'set_name'            => set_name,
       'collector_num'       => collector_num,
       'illustrator'         => illustrator,
       'types'               => types,
@@ -219,7 +224,7 @@ private
     elsif icon_alt =~ /^(\d+)$/
       "{#{$1}}"
     else
-      raise "Unknown icon: #{icon}"
+      raise "Unknown icon: #{icon_alt}"
     end
   end
 end

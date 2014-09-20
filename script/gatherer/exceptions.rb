@@ -1,6 +1,10 @@
 CARDS_TO_SKIP = [
   '47784', '47787', '47785', '47786', '49056', '47788', '47789', # Eighth Edition Box Set
-  '83064', '83319', '84073', '83104', '94912', '94911', '94910', '83075', '94914' # Ninth Edition Box Set
+  '83064', '83319', '84073', '83104', '94912', '94911', '94910', '83075', '94914', # Ninth Edition Box Set
+  # Sixth Edition cards in Starter 2000
+  '25448', '25451', '25452', '25453', '25454', '25458', '25477', '25478', '25479', '25480', '25481', '25482', '25483',
+  '25486', '25487', '25492', '25496', '25497', '25498', '25499', '25500', '25501', '25502', '25503', '25504', '25506',
+  '25507', '25508', '25510', '25514', '25515', '25526', '25528', '25529', '25533', '25536', '25540', '25543'
 ].freeze
 
 COLLECTOR_NUMS = {
@@ -677,12 +681,15 @@ COLLECTOR_NUMS = {
   '15358'=>'14','14472'=>'15','11530'=>'289','14777'=>'290','14761'=>'291','14759'=>'292','11355'=>'293','14778'=>'294',
   '14780'=>'295','15407'=>'296','15439'=>'297','15441'=>'298','14781'=>'299','14782'=>'300','15442'=>'301','15435'=>'302',
   '15401'=>'303','14767'=>'304','15408'=>'305','14784'=>'306','15436'=>'307','11454'=>'308','14768'=>'309','11503'=>'310',
-  '15443'=>'311','15409'=>'312','14769'=>'313','15402'=>'314','15410'=>'315'
-
+  '15443'=>'311','15409'=>'312','14769'=>'313','15402'=>'314','15410'=>'315',
+  # Starter 2000
+  '25447'=>'2','25449'=>'19','25450'=>'7','25455'=>'4','25456'=>'1','25457'=>'5','25459'=>'14','25460'=>'15',
+  '25462'=>'16','25463'=>'18','25475'=>'10','25476'=>'12','25484'=>'20','25485'=>'11','25488'=>'8','25490'=>'6',
+  '25491'=>'9','25493'=>'3','25494'=>'17'
 }.freeze
 
 MANA_COST = {
-  '74257' => 'W' # Unhinged - Little Girl
+  '74257' => '½W' # Unhinged - Little Girl
 }.freeze
 
 ORACLE_TEXT = {
@@ -751,13 +758,13 @@ FLAVOR_TEXT = {
 POWER = {
   '24' => nil, # Alpha - Jade Statue
   '319' => nil, # Beta - Jade Statue
-  '74257' => '1/2' # Unhinged - Little Girl
+  '74257' => '½' # Unhinged - Little Girl
 }.freeze
 
 TOUGHNESS = {
   '24' => nil, # Alpha - Jade Statue
   '319' => nil, # Beta - Jade Statue
-  '74257' => '1/2' # Unhinged - Little Girl
+  '74257' => '½' # Unhinged - Little Girl
 }.freeze
 
 ICONS = {
@@ -787,8 +794,39 @@ ICONS = {
   'Phyrexian Black' => '{BP}',
   'Phyrexian Red' =>   '{RP}',
   'Phyrexian Green' => '{GP}',
+  'Half a Red' => '{½R}',
   'Snow' =>  '{S}',
   'Tap' =>   '{T}',
   'Untap' => '{Q}',
   'Variable Colorless' => '{X}'
 }.freeze
+
+# Starter 2000 Alternate Art Promo Foil Rhox
+S00_RHOX = {
+  "name" => "Rhox",
+  "set_name" => "Starter 2000",
+  "collector_num" => "13",
+  "illustrator" => "Mark Zug",
+  "types" => [
+    "Creature"
+  ],
+  "supertypes" => [],
+  "subtypes" => [
+    "Rhino",
+    "Beast"
+  ],
+  "rarity" => "Special",
+  "mana_cost" => "4GG",
+  "converted_mana_cost" => 6,
+  "oracle_text" => [
+    "You may have Rhox assign its combat damage as though it weren't blocked.",
+    "{2}{G}: Regenerate Rhox. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)"
+  ],
+  "flavor_text" => nil,
+  "power" => "5",
+  "toughness" => "5",
+  "loyalty" => nil,
+  "multiverse_id" => nil,
+  "other_part" => nil,
+  "color_indicator" => nil
+}
