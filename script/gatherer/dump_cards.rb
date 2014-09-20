@@ -21,7 +21,7 @@ class CardDumper
     while num_pages >= page
       results = SetDumper.search(@set['name'], page-1)
       processed += process_page(results)
-      num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).join.to_i
+      num_results = results.css('[id*="_searchTermDisplay"]').text.scan(/\((\d+)\)/).last.join.to_i
       num_pages = (num_results / 100.0).ceil; page += 1
     end; processed.flatten!
 
@@ -79,7 +79,7 @@ class Card
       return available_numbers[ split_card_name.split('/').index(@given_name) ]
     end
     value_of('number').tap do |val|
-      raise "Found a card without a collector_num: #{@given_name}" if val.empty?
+      raise "Found a card without a collector_num: #{@given_name}" if val.blank?
     end
   end
 
@@ -237,7 +237,14 @@ if __FILE__==$0
   @sets = ARGV.empty? ? SetDumper.existing.values
                       : SetDumper.existing.slice(*ARGV).values
   @sets.each do |set|
-    dumper = CardDumper.new(set)
-    write dumper.output, merge(dumper.cards, dumper.output)
+    next if File.exists?("data/gatherer/sets/#{set['code']}.json")
+    begin
+      dumper = CardDumper.new(set)
+      write dumper.output, merge(dumper.cards, dumper.output)
+    rescue => e
+      puts "rescued #{e}";folder = File.expand_path('../../../data/gatherer/err', __FILE__)
+      puts "writing #{path=File.join(folder, "#{set['code']}.err")}"
+      File.open(path, 'w'){|file| file.puts "#{e}\n#{e.backtrace.join("\n")}"}
+    end
   end
 end
