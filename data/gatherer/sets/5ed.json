@@ -18,7 +18,7 @@
       "Flying",
       "Whenever Abyssal Specter deals damage to a player, that player discards a card."
     ],
-    "flavor_text": "\"Mystic shadow, bending near me, / Who art thou? / Whence come ye?\"—Stephen Crane,\"Mystic shadow, bending near me\"",
+    "flavor_text": "\"Mystic shadow, bending near me, / Who art thou? / Whence come ye?\" —Stephen Crane,\"Mystic shadow, bending near me\"",
     "power": "2",
     "toughness": "3",
     "loyalty": null,
@@ -70,7 +70,7 @@
     "oracle_text": [
       "Exile two target nonartifact creatures. Ashes to Ashes deals 5 damage to you."
     ],
-    "flavor_text": "\"Kings and beggars, they end the same—Surrounded by stench, rot, and blame.\"—Aline Corralurn, \"Legacy\"",
+    "flavor_text": "\"Kings and beggars, they end the same—Surrounded by stench, rot, and blame.\" —Aline Corralurn, \"Legacy\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -404,7 +404,7 @@
     "oracle_text": [
       "{B}{B}: Counter target green spell."
     ],
-    "flavor_text": "\"Every forest is carpeted with the corpses of a thousand trees.\"—Baron Sengir to Autumn Willow",
+    "flavor_text": "\"Every forest is carpeted with the corpses of a thousand trees.\" —Baron Sengir to Autumn Willow",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -430,7 +430,7 @@
     "oracle_text": [
       "Black spells you cast cost {B} more to cast."
     ],
-    "flavor_text": "\"The derelor's greatest contribution to the Ebon Hand was the inspirational effect its creator's execution had upon the other thrull breeders.\"—Sarpadian Empires, vol. II",
+    "flavor_text": "\"The derelor's greatest contribution to the Ebon Hand was the inspirational effect its creator's execution had upon the other thrull breeders.\" —Sarpadian Empires, vol. II",
     "power": "4",
     "toughness": "4",
     "loyalty": null,
@@ -481,7 +481,7 @@
     "oracle_text": [
       "{B}: Regenerate Drudge Skeletons. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)"
     ],
-    "flavor_text": "\"The dead make good soldiers. They can't disobey orders, they never surrender, and they don't stop fighting when a random body part falls off.\"—Nevinyrral,Necromancer's Handbook",
+    "flavor_text": "\"The dead make good soldiers. They can't disobey orders, they never surrender, and they don't stop fighting when a random body part falls off.\" —Nevinyrral,Necromancer's Handbook",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -589,7 +589,7 @@
       "Flying",
       "Sacrifice a creature: Fallen Angel gets +2/+1 until end of turn."
     ],
-    "flavor_text": "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\"—Baron Sengir",
+    "flavor_text": "\"Angels are simply extensions of truth upon the fabric of life—and there is far more dark than light.\" —Baron Sengir",
     "power": "3",
     "toughness": "3",
     "loyalty": null,
@@ -642,7 +642,7 @@
     "oracle_text": [
       "{B}: Frozen Shade gets +1/+1 until end of turn."
     ],
-    "flavor_text": "\"There are some qualities, some incorporate things, / That have a double life, which thus is made / A type of twin entity which springs / From matter and light, evinced in solid and shade.\"—Edgar Allan Poe, \"Silence\"",
+    "flavor_text": "\"There are some qualities, some incorporate things, / That have a double life, which thus is made / A type of twin entity which springs / From matter and light, evinced in solid and shade.\" —Edgar Allan Poe, \"Silence\"",
     "power": "0",
     "toughness": "1",
     "loyalty": null,
@@ -669,7 +669,7 @@
       "Enchant creature",
       "When enchanted creature leaves the battlefield, its controller sacrifices a creature."
     ],
-    "flavor_text": "\"Turn the key deftly in the oiled wards,And seal the hushed casket of my soul.\"—John Keats, \"To Sleep\"",
+    "flavor_text": "\"Turn the key deftly in the oiled wards,And seal the hushed casket of my soul.\" —John Keats, \"To Sleep\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -720,7 +720,7 @@
     "oracle_text": [
       "At end of combat, put a -0/-2 counter on each creature blocking or blocked by Greater Werewolf."
     ],
-    "flavor_text": "\"Two legs by day, four legs by night, eyes raging in storm-gotten might.\"—Ancient Northland riddle",
+    "flavor_text": "\"Two legs by day, four legs by night, eyes raging in storm-gotten might.\" —Ancient Northland riddle",
     "power": "2",
     "toughness": "4",
     "loyalty": null,
@@ -795,7 +795,7 @@
     "oracle_text": [
       "{1}: Add {B} to your mana pool. If this ability has been activated four or more times this turn, sacrifice Initiates of the Ebon Hand at the beginning of the next end step."
     ],
-    "flavor_text": "\"We are no longer Nature's children, but her masters . . . .\"—Oath of the Ebon Hand",
+    "flavor_text": "\"We are no longer Nature's children, but her masters . . . .\" —Oath of the Ebon Hand",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -822,7 +822,7 @@
       "When Kjeldoran Dead enters the battlefield, sacrifice a creature.",
       "{B}: Regenerate Kjeldoran Dead."
     ],
-    "flavor_text": "\"They shall drink sorrow's dregs. They shall kill those whom once they loved.\"—Lim-Dûl, the Necromancer",
+    "flavor_text": "\"They shall drink sorrow's dregs. They shall kill those whom once they loved.\" —Lim-Dûl, the Necromancer",
     "power": "3",
     "toughness": "1",
     "loyalty": null,
@@ -851,7 +851,7 @@
       "{B}: Knight of Stromgald gains first strike until end of turn.",
       "{B}{B}: Knight of Stromgald gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"Kjeldorans should rule supreme, and to the rest, death\"—Avram Garrisson,Leader of the Knights of Stromgald",
+    "flavor_text": "\"Kjeldorans should rule supreme, and to the rest, death\" —Avram Garrisson,Leader of the Knights of Stromgald",
     "power": "2",
     "toughness": "1",
     "loyalty": null,
@@ -906,7 +906,7 @@
       "Enchant creature",
       "Enchanted creature has swampwalk."
     ],
-    "flavor_text": "\"Bind me to thee, my soul to thine. I am your servant and your slave. Blood for blood, flesh for flesh, Leshrac, my lord.\"—Lim-Dûl, the Necromancer",
+    "flavor_text": "\"Bind me to thee, my soul to thine. I am your servant and your slave. Blood for blood, flesh for flesh, Leshrac, my lord.\" —Lim-Dûl, the Necromancer",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1301,7 +1301,7 @@
     "oracle_text": [
       "Plague Rats's power and toughness are each equal to the number of creatures named Plague Rats on the battlefield."
     ],
-    "flavor_text": "\"Should you a Rat to madness teaseWhy ev'n a Rat may plague you . . . .\"—Samuel Coleridge, \"Recantation\"",
+    "flavor_text": "\"Should you a Rat to madness teaseWhy ev'n a Rat may plague you . . . .\" —Samuel Coleridge, \"Recantation\"",
     "power": "*",
     "toughness": "*",
     "loyalty": null,
@@ -1400,7 +1400,7 @@
     "mana_cost": "2B",
     "converted_mana_cost": 3,
     "oracle_text": [],
-    "flavor_text": "\"They groaned, they stirred, they all uprose,Nor Spake, nor moved their eyes; It had been strange, even in a dream,To have seen those dead men rise.\"—Samuel Coleridge,\"The Rime of the Ancient Mariner\"",
+    "flavor_text": "\"They groaned, they stirred, they all uprose,Nor Spake, nor moved their eyes; It had been strange, even in a dream,To have seen those dead men rise.\" —Samuel Coleridge,\"The Rime of the Ancient Mariner\"",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -1427,7 +1427,7 @@
       "When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.",
       "When Sengir Autocrat leaves the battlefield, exile all Serf tokens."
     ],
-    "flavor_text": "\"Evil is relative. Do sheep think any better of the shepherd?\"—Baron Sengir",
+    "flavor_text": "\"Evil is relative. Do sheep think any better of the shepherd?\" —Baron Sengir",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -1454,7 +1454,7 @@
     "oracle_text": [
       "{T}: Target creature other than Sorceress Queen has base power and toughness 0/2 until end of turn."
     ],
-    "flavor_text": "\"We have always counted time with sand; this pinch is your meaningless life.\"—Nailah, self-proclaimed Queen of Rabiah",
+    "flavor_text": "\"We have always counted time with sand; this pinch is your meaningless life.\" —Nailah, self-proclaimed Queen of Rabiah",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -1559,7 +1559,7 @@
       "Enchanted creature gets +1/+1.",
       "Sacrifice Thrull Retainer: Regenerate enchanted creature."
     ],
-    "flavor_text": "\"Until the Rebellion, thrulls served their masters faithfully—even at the cost of their own lives.\"—Sarpadian Empires, vol. II",
+    "flavor_text": "\"Until the Rebellion, thrulls served their masters faithfully—even at the cost of their own lives.\" —Sarpadian Empires, vol. II",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1586,7 +1586,7 @@
       "Enchant creature",
       "{1}{B}: Put a -1/-1 counter on enchanted creature."
     ],
-    "flavor_text": "\"It helps pass the time until you die.\"—Grandmother Sengir",
+    "flavor_text": "\"It helps pass the time until you die.\" —Grandmother Sengir",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1611,7 +1611,7 @@
       "Touch of Death deals 1 damage to target player. You gain 1 life.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"What was yours is mine. Your land, your people, and now your life.\"—Lim-Dûl, the Necromancer",
+    "flavor_text": "\"What was yours is mine. Your land, your people, and now your life.\" —Lim-Dûl, the Necromancer",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1665,7 +1665,7 @@
       "Flying (This creature can't be blocked except by creatures with flying or reach.)",
       "{B}: Vampire Bats gets +1/+0 until end of turn. Activate this ability no more than twice each turn."
     ],
-    "flavor_text": "\"For something is amiss or out of place / When mice with wings can wear a human face.\"—Theodore Roethke, \"The Bat\"",
+    "flavor_text": "\"For something is amiss or out of place / When mice with wings can wear a human face.\" —Theodore Roethke, \"The Bat\"",
     "power": "0",
     "toughness": "1",
     "loyalty": null,
@@ -1693,7 +1693,7 @@
       "Defender (This creature can't attack.)",
       "{B}: Regenerate Wall of Bone. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)"
     ],
-    "flavor_text": "\"Good neighbors make good walls.\"—Jakkarak the Maimer",
+    "flavor_text": "\"Good neighbors make good walls.\" —Jakkarak the Maimer",
     "power": "1",
     "toughness": "4",
     "loyalty": null,
@@ -1933,7 +1933,7 @@
       "You control enchanted creature.",
       "Enchanted creature gets +0/+1."
     ],
-    "flavor_text": "\"What I want, I take.\"—Gustha Ebbasdotter,Kjeldoran royal mage",
+    "flavor_text": "\"What I want, I take.\" —Gustha Ebbasdotter,Kjeldoran royal mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1957,7 +1957,7 @@
     "oracle_text": [
       "Return target permanent to its owner's hand."
     ],
-    "flavor_text": "\"O call back yesterday, bid time return.\"—William Shakespeare,King Richard the Second",
+    "flavor_text": "\"O call back yesterday, bid time return.\" —William Shakespeare,King Richard the Second",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -1981,7 +1981,7 @@
     "oracle_text": [
       "Draw three cards, then put two cards from your hand on top of your library in any order."
     ],
-    "flavor_text": "\"I reeled from the blow, and then suddenly, I knew exactly what to do. Within moments, victory was mine.\"—Gustha EbbasdotterKjeldoran royal mage",
+    "flavor_text": "\"I reeled from the blow, and then suddenly, I knew exactly what to do. Within moments, victory was mine.\" —Gustha EbbasdotterKjeldoran royal mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2059,7 +2059,7 @@
       "Dandân can't attack unless defending player controls an Island.",
       "When you control no Islands, sacrifice Dandân."
     ],
-    "flavor_text": "\"Catch good today. Start replacing crew tomorrow.\"—Faysal al-Mousa, fisher captain, log",
+    "flavor_text": "\"Catch good today. Start replacing crew tomorrow.\" —Faysal al-Mousa, fisher captain, log",
     "power": "4",
     "toughness": "1",
     "loyalty": null,
@@ -2084,9 +2084,9 @@
     "converted_mana_cost": 5,
     "oracle_text": [
       "Defender (This creature can't attack.)",
-      "{0}: Dark Maze can attack this turn as though it didn't have defender.  Exile it at the beginning of the next end step."
+      "{0}: Dark Maze can attack this turn as though it didn't have defender. Exile it at the beginning of the next end step."
     ],
-    "flavor_text": "\"Stray not onto the path of darkness, or be lost forever.\"—Baki, wizard attendant",
+    "flavor_text": "\"Stray not onto the path of darkness, or be lost forever.\" —Baki, wizard attendant",
     "power": "4",
     "toughness": "5",
     "loyalty": null,
@@ -2158,7 +2158,7 @@
     "oracle_text": [
       "All artifacts have \"At the beginning of your upkeep, sacrifice this artifact unless you pay {2}.\""
     ],
-    "flavor_text": "\"Nothing endures but change.\"—Heraclitus",
+    "flavor_text": "\"Nothing endures but change.\" —Heraclitus",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2183,7 +2183,7 @@
       "Tap target artifact, creature, or land.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"Worlds turn in crucial moments of decision. Make your choice.\"—Gustha Ebbasdotter,Kjeldoran royal mage",
+    "flavor_text": "\"Worlds turn in crucial moments of decision. Make your choice.\" —Gustha Ebbasdotter,Kjeldoran royal mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2261,7 +2261,7 @@
     "oracle_text": [
       "{U}{U}: Tap target creature without flying."
     ],
-    "flavor_text": "\"A dash of cool water does wonders to clear a cluttered battlefield.\"—Vibekke Ragnild, Witches and War",
+    "flavor_text": "\"A dash of cool water does wonders to clear a cluttered battlefield.\" —Vibekke Ragnild, Witches and War",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2285,7 +2285,7 @@
     "oracle_text": [
       "Counter target spell unless its controller pays {1}."
     ],
-    "flavor_text": "\"Unknown spears / Suddenly hurtle before my dream-awakened eyes . . . .\"—William Butler Yeats,\"The Valley of the Black Pig\"",
+    "flavor_text": "\"Unknown spears / Suddenly hurtle before my dream-awakened eyes . . . .\" —William Butler Yeats,\"The Valley of the Black Pig\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2336,7 +2336,7 @@
       "Enchant creature",
       "Prevent all combat damage that would be dealt to and dealt by enchanted creature."
     ],
-    "flavor_text": "\". . . And gives to airy nothingA local habitation and a name.\"—William Shakespeare,A Midsummer-Night's Dream",
+    "flavor_text": "\". . . And gives to airy nothingA local habitation and a name.\" —William Shakespeare,A Midsummer-Night's Dream",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2362,7 +2362,7 @@
     "oracle_text": [
       "Defender (This creature can't attack.)"
     ],
-    "flavor_text": "\"As we neared, Belfar proclaimed the wall to be made of glass and went forward to prove it. We had no choice but to pull his hands free from where he had touched it, leaving flesh palmprints on the icy wall.\"—Tross, Vainus Expedition leader",
+    "flavor_text": "\"As we neared, Belfar proclaimed the wall to be made of glass and went forward to prove it. We had no choice but to pull his hands free from where he had touched it, leaving flesh palmprints on the icy wall.\" —Tross, Vainus Expedition leader",
     "power": "0",
     "toughness": "7",
     "loyalty": null,
@@ -2439,7 +2439,7 @@
       "• Counter target spell if it's red.",
       "• Destroy target permanent if it's red."
     ],
-    "flavor_text": "\"Heed the lessons of our time: the forms of water may move the land itself and hold captive the fires within.\"—Gustha Ebbasdotter,Kjeldoran royal mage",
+    "flavor_text": "\"Heed the lessons of our time: the forms of water may move the land itself and hold captive the fires within.\" —Gustha Ebbasdotter,Kjeldoran royal mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2517,7 +2517,7 @@
     "oracle_text": [
       "Whenever Labyrinth Minotaur blocks a creature, that creature doesn't untap during its controller's next untap step."
     ],
-    "flavor_text": "\"I doubt any labyrinth minotaurs still live—but then we minotaurs are stubborn beings.\"—Onatah, Anaba shaman",
+    "flavor_text": "\"I doubt any labyrinth minotaurs still live—but then we minotaurs are stubborn beings.\" —Onatah, Anaba shaman",
     "power": "1",
     "toughness": "4",
     "loyalty": null,
@@ -2570,7 +2570,7 @@
     "oracle_text": [
       "Whenever a Forest an opponent controls becomes tapped, you gain 1 life."
     ],
-    "flavor_text": "\"Keep a green tree in your heart and perhaps the singing bird will come.\"—Chinese proverb",
+    "flavor_text": "\"Keep a green tree in your heart and perhaps the singing bird will come.\" —Chinese proverb",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2596,7 +2596,7 @@
     "oracle_text": [
       "Other Merfolk creatures get +1/+1 and have islandwalk."
     ],
-    "flavor_text": "\"‘We have no legs,' the warrior spat, ‘for we have finished running.'\"—Vodalian folktale",
+    "flavor_text": "\"'We have no legs,' the warrior spat, 'for we have finished running.'\" —Vodalian folktale",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -2671,7 +2671,7 @@
     "oracle_text": [
       "Counter target spell. If that spell is countered this way, put it on top of its owner's library instead of into that player's graveyard."
     ],
-    "flavor_text": "\"Oh, I had a conscience once. But alas, I seem to have forgotten where I put it.\"—Chandler",
+    "flavor_text": "\"Oh, I had a conscience once. But alas, I seem to have forgotten where I put it.\" —Chandler",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -2800,7 +2800,7 @@
     "oracle_text": [
       "Flying"
     ],
-    "flavor_text": "\"While, like a ghastly rapid river,Through the pale door,A hideous throng rush out forever,And laugh—but smile no more.\"—Edgar Allan Poe,\"The Haunted Palace\"",
+    "flavor_text": "\"While, like a ghastly rapid river,Through the pale door,A hideous throng rush out forever,And laugh—but smile no more.\" —Edgar Allan Poe,\"The Haunted Palace\"",
     "power": "3",
     "toughness": "3",
     "loyalty": null,
@@ -3085,7 +3085,7 @@
     "oracle_text": [
       "{U}: Sea Spirit gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"It rose above our heads, above the ship, and still higher yet. No foggy, ice-laden sea in the world could frighten me more.\"—General Jarkeld, the Arctic Fox",
+    "flavor_text": "\"It rose above our heads, above the ship, and still higher yet. No foggy, ice-laden sea in the world could frighten me more.\" —General Jarkeld, the Arctic Fox",
     "power": "2",
     "toughness": "3",
     "loyalty": null,
@@ -3111,7 +3111,7 @@
     "oracle_text": [
       "Flying, protection from red"
     ],
-    "flavor_text": "\"No one can catch what won't be caught.\"—Kakra, sea troll",
+    "flavor_text": "\"No one can catch what won't be caught.\" —Kakra, sea troll",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -3240,7 +3240,7 @@
     "oracle_text": [
       "Whenever an opponent casts a creature spell, Soul Barrier deals 2 damage to that player unless he or she pays {2}."
     ],
-    "flavor_text": "\"The Soul selects her own Society—Then—shuts the Door—\"—Emily Dickinson,\"The Soul selects her own Society\"",
+    "flavor_text": "\"The Soul selects her own Society—Then—shuts the Door—\" —Emily Dickinson,\"The Soul selects her own Society\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -3444,7 +3444,7 @@
       "Target creature gains flying until end of turn.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"Come one, come all this rock shall fly From its firm base as soon as I.\"—Sir Walter Scott, \"The Lady of the Lake\"",
+    "flavor_text": "\"Come one, come all this rock shall fly From its firm base as soon as I.\" —Sir Walter Scott, \"The Lady of the Lake\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -3469,7 +3469,7 @@
     "mana_cost": "1U",
     "converted_mana_cost": 2,
     "oracle_text": [],
-    "flavor_text": "\"Vodalian rank is displayed by the colors and patterns of their skin. Beware the color red; that is the badge of the empress's favor.\"—Corbio, pearl diver",
+    "flavor_text": "\"Vodalian rank is displayed by the colors and patterns of their skin. Beware the color red; that is the badge of the empress's favor.\" —Corbio, pearl diver",
     "power": "1",
     "toughness": "2",
     "loyalty": null,
@@ -3523,7 +3523,7 @@
       "Flying",
       "Wind Spirit can't be blocked except by two or more creatures."
     ],
-    "flavor_text": "\" . . . When the trees bow down their heads, / The wind is passing by.\"—Christina Rossetti,\"Who Has Seen the Wind?\"",
+    "flavor_text": "\" . . . When the trees bow down their heads, / The wind is passing by.\" —Christina Rossetti,\"Who Has Seen the Wind?\"",
     "power": "3",
     "toughness": "2",
     "loyalty": null,
@@ -3600,7 +3600,7 @@
     "oracle_text": [
       "An-Havva Constable's toughness is equal to 1 plus the number of green creatures on the battlefield."
     ],
-    "flavor_text": "\"Joskun and the other constables serve with passion, if not with grace.\"—Devin, faerie noble",
+    "flavor_text": "\"Joskun and the other constables serve with passion, if not with grace.\" —Devin, faerie noble",
     "power": "2",
     "toughness": "1+*",
     "loyalty": null,
@@ -3709,7 +3709,7 @@
       "Enchanted creature gets +0/+2.",
       "Sacrifice Carapace: Regenerate enchanted creature."
     ],
-    "flavor_text": "\"Now that's a fashion statement.\"—Devin, faerie noble",
+    "flavor_text": "\"Now that's a fashion statement.\" —Devin, faerie noble",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -3864,7 +3864,7 @@
     "oracle_text": [
       "Destroy target artifact. It can't be regenerated. That artifact's controller gains life equal to its converted mana cost."
     ],
-    "flavor_text": "\"Ashes and dust; dust and ashes.Hope it works before it smashes.\"—Argivian children's rhyme",
+    "flavor_text": "\"Ashes and dust; dust and ashes.Hope it works before it smashes.\" —Argivian children's rhyme",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -3912,7 +3912,7 @@
     "mana_cost": "4G",
     "converted_mana_cost": 5,
     "oracle_text": [],
-    "flavor_text": "\"And the unclean spirits went out, and entered the swine: and the herd ran violently . . . .\"—The Bible, Mark 5:13",
+    "flavor_text": "\"And the unclean spirits went out, and entered the swine: and the herd ran violently . . . .\" —The Bible, Mark 5:13",
     "power": "4",
     "toughness": "4",
     "loyalty": null,
@@ -3940,7 +3940,7 @@
     "oracle_text": [
       "{3}{G}, {T}: You may tap or untap target artifact, creature, or land."
     ],
-    "flavor_text": "\"Did clouds dance in his eyes,did thorns play at his fingertips?\"—Shesul Fass, faerie band",
+    "flavor_text": "\"Did clouds dance in his eyes,did thorns play at his fingertips?\" —Shesul Fass, faerie band",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -4044,7 +4044,7 @@
       "Trample (If this creature would assign enough damage to its blockers to destroy them, you may have it assign the rest of its damage to defending player or planeswalker.)",
       "At the beginning of your upkeep, Force of Nature deals 8 damage to you unless you pay {G}{G}{G}{G}."
     ],
-    "flavor_text": "\"It blinked, and flower petals fell like tears. Harthar, sensing weakness, attacked—and his blood fell like petals.\"—Shesul Fass, faerie bard",
+    "flavor_text": "\"It blinked, and flower petals fell like tears. Harthar, sensing weakness, attacked—and his blood fell like petals.\" —Shesul Fass, faerie bard",
     "power": "8",
     "toughness": "8",
     "loyalty": null,
@@ -4069,7 +4069,7 @@
       "Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"Only the foolish fear foxfire.\"—Kolbjörn,Elder Druid of the Juniper Order",
+    "flavor_text": "\"Only the foolish fear foxfire.\" —Kolbjörn,Elder Druid of the Juniper Order",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4123,7 +4123,7 @@
     "oracle_text": [
       "{T}: Add {G}{G} to your mana pool."
     ],
-    "flavor_text": "\"Do we know what we're doing? Yes—the will of Freyalise.\"—Laina of the Elvish Council",
+    "flavor_text": "\"Do we know what we're doing? Yes—the will of Freyalise.\" —Laina of the Elvish Council",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -4149,7 +4149,7 @@
     "oracle_text": [
       "At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Ghazbán Ogre."
     ],
-    "flavor_text": "\"We were holding our own—until the ogre guiding us suddenly grinned and turned on our commander.\"—Ivra Jursdotter, Sarpadian mercenary",
+    "flavor_text": "\"We were holding our own—until the ogre guiding us suddenly grinned and turned on our commander.\" —Ivra Jursdotter, Sarpadian mercenary",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -4249,7 +4249,7 @@
     "oracle_text": [
       "At the beginning of your upkeep, sacrifice Hungry Mist unless you pay {G}{G}."
     ],
-    "flavor_text": "\"All things must eat, after all. Even the air can hunger.\"—Gemma, Willow priestess",
+    "flavor_text": "\"All things must eat, after all. Even the air can hunger.\" —Gemma, Willow priestess",
     "power": "6",
     "toughness": "2",
     "loyalty": null,
@@ -4273,7 +4273,7 @@
     "oracle_text": [
       "Hurricane deals X damage to each creature with flying and each player."
     ],
-    "flavor_text": "\"The raging winds . . . , settling on the sea, the surges sweep, / Raise liquid mountains, and disclose the deep.\"—Virgil, Aeneid, Book I, trans. Dryden",
+    "flavor_text": "\"The raging winds . . . , settling on the sea, the surges sweep, / Raise liquid mountains, and disclose the deep.\" —Virgil, Aeneid, Book I, trans. Dryden",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4325,7 +4325,7 @@
     "mana_cost": "4G",
     "converted_mana_cost": 5,
     "oracle_text": [],
-    "flavor_text": "\"‘I'll show you how to handle the treefolk' the giant bragged, and he strode off into the forest. Two days later he returned, his face masked in sap and a nest behind his ear. None dared ask who won.\"—Azeworai, \"The Treeling\"",
+    "flavor_text": "\"'I'll show you how to handle the treefolk' the giant bragged, and he strode off into the forest. Two days later he returned, his face masked in sap and a nest behind his ear. None dared ask who won.\" —Azeworai, \"The Treeling\"",
     "power": "3",
     "toughness": "5",
     "loyalty": null,
@@ -4351,7 +4351,7 @@
     "oracle_text": [
       "Whenever Johtull Wurm becomes blocked, it gets -2/-1 until end of turn for each creature blocking it beyond the first."
     ],
-    "flavor_text": "\"To bring her down we must be on all sides at once—leave one avenue open and we'll all be dead.\"—Taaveti of Kelsinko, elvish hunter",
+    "flavor_text": "\"To bring her down we must be on all sides at once—leave one avenue open and we'll all be dead.\" —Taaveti of Kelsinko, elvish hunter",
     "power": "6",
     "toughness": "6",
     "loyalty": null,
@@ -4431,7 +4431,7 @@
     "oracle_text": [
       "Lhurgoyf's power is equal to the number of creature cards in all graveyards and its toughness is equal to that number plus 1."
     ],
-    "flavor_text": "\"Ach Hans, run It's the lhurgoyf\"—Saffi Eriksdotter, last words",
+    "flavor_text": "\"Ach Hans, run It's the lhurgoyf\" —Saffi Eriksdotter, last words",
     "power": "*",
     "toughness": "1+*",
     "loyalty": null,
@@ -4455,7 +4455,7 @@
     "oracle_text": [
       "{G}{G}: Counter target black spell."
     ],
-    "flavor_text": "\"Every fallen tree nourishes a thousand seedlings.\"—Autumn Willow to Baron Sengir",
+    "flavor_text": "\"Every fallen tree nourishes a thousand seedlings.\" —Autumn Willow to Baron Sengir",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4561,7 +4561,7 @@
       "Enchant creature",
       "All creatures able to block enchanted creature do so."
     ],
-    "flavor_text": "\"When setting a snare, success depends not on the quality of the trap, but the quality of the bait.\"—Geyadrone Dihada",
+    "flavor_text": "\"When setting a snare, success depends not on the quality of the trap, but the quality of the bait.\" —Geyadrone Dihada",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4587,7 +4587,7 @@
     "oracle_text": [
       "Whenever Marsh Viper deals damage to a player, that player gets two poison counters. (A player with ten or more poison counters loses the game.)"
     ],
-    "flavor_text": "\"And the seraphs sob at vermin fangsIn human gore imbued.\"—Edgar Allan Poe, \"The Conqueror Wurm\"",
+    "flavor_text": "\"And the seraphs sob at vermin fangsIn human gore imbued.\" —Edgar Allan Poe, \"The Conqueror Wurm\"",
     "power": "1",
     "toughness": "2",
     "loyalty": null,
@@ -4611,7 +4611,7 @@
     "oracle_text": [
       "Search your library for a Forest card and put that card onto the battlefield. Then shuffle your library."
     ],
-    "flavor_text": "\"It is in our nature to recognize beauty, but to repeat it—ah, that is another feat altogether.\"—Hannah of Verdura",
+    "flavor_text": "\"It is in our nature to recognize beauty, but to repeat it—ah, that is another feat altogether.\" —Hannah of Verdura",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4638,7 +4638,7 @@
     "oracle_text": [
       "{1}{G}, {T}: Target creature gets -2/-0 until end of turn."
     ],
-    "flavor_text": "\"A mysterious people indeed. Their origins are as secret as their traditions.\"—Lord Magnus of Llanowar",
+    "flavor_text": "\"A mysterious people indeed. Their origins are as secret as their traditions.\" —Lord Magnus of Llanowar",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -4662,7 +4662,7 @@
     "oracle_text": [
       "At the beginning of each player's upkeep, Primal Order deals damage to that player equal to the number of nonbasic lands he or she controls."
     ],
-    "flavor_text": "\"My sorrow: to dream of simple times, and wake in mine . . . .\"—Ola DaRiol, \"Regrets\"",
+    "flavor_text": "\"My sorrow: to dream of simple times, and wake in mine . . . .\" —Ola DaRiol, \"Regrets\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4715,7 +4715,7 @@
     "oracle_text": [
       "{T}: Target creature loses flying until end of turn."
     ],
-    "flavor_text": "\"Crawing, crawing,For my crowse crawing,I lost the best feather i' my wingFor my crowse crawing.\"—Anonymous Scottish ballad",
+    "flavor_text": "\"Crawing, crawing,For my crowse crawing,I lost the best feather i' my wingFor my crowse crawing.\" —Anonymous Scottish ballad",
     "power": "3",
     "toughness": "2",
     "loyalty": null,
@@ -4766,7 +4766,7 @@
     "mana_cost": "7G",
     "converted_mana_cost": 8,
     "oracle_text": [],
-    "flavor_text": "\"Flourishing during the Ice Age, thesewurms were the bane of all Kjeldorans. Their great size and ferocity made them the subject of countless nightmares—they embodied the worst of the Ice Age.\"—Kjeldor: Ice Civilization",
+    "flavor_text": "\"Flourishing during the Ice Age, thesewurms were the bane of all Kjeldorans. Their great size and ferocity made them the subject of countless nightmares—they embodied the worst of the Ice Age.\" —Kjeldor: Ice Civilization",
     "power": "7",
     "toughness": "6",
     "loyalty": null,
@@ -4792,7 +4792,7 @@
     "oracle_text": [
       "{G}, {T}, Sacrifice Scavenger Folk: Destroy target artifact."
     ],
-    "flavor_text": "\"Stoop, pick, turn, toss.This is the way we mourn our loss.\"—Scavenger dirge",
+    "flavor_text": "\"Stoop, pick, turn, toss.This is the way we mourn our loss.\" —Scavenger dirge",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -4869,7 +4869,7 @@
     "oracle_text": [
       "Target creature gets -5/-0 until end of turn."
     ],
-    "flavor_text": "\"May you decrease like coal upon the hearth . . . Evaporate like water in a pail, Become as little as a linseed-grain . . . And so diminish that you come to nothing.\"—Anglo-Saxon curse",
+    "flavor_text": "\"May you decrease like coal upon the hearth . . . Evaporate like water in a pail, Become as little as a linseed-grain . . . And so diminish that you come to nothing.\" —Anglo-Saxon curse",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4893,7 +4893,7 @@
     "oracle_text": [
       "Attacking creatures get +1/+0 and gain trample until end of turn."
     ],
-    "flavor_text": "\"When are beasts like a river?\"—The One Thousand Questions",
+    "flavor_text": "\"When are beasts like a river?\" —The One Thousand Questions",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -4967,7 +4967,7 @@
     "oracle_text": [
       "When Tarpan dies, you gain 1 life."
     ],
-    "flavor_text": "\"A good tarpan will serve you, faithful and true. A bad one will kick you in the head.\"—General Jarkeld, the Arctic Fox",
+    "flavor_text": "\"A good tarpan will serve you, faithful and true. A bad one will kick you in the head.\" —General Jarkeld, the Arctic Fox",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -5116,7 +5116,7 @@
       "Enchant creature",
       "Whenever enchanted creature blocks or becomes blocked by a non-Wall creature, destroy the other creature at end of combat."
     ],
-    "flavor_text": "\"I told him it was just a flesh wound, but the next time I looked at him, poor Tadhg was dead and gone.\"—Maeveen O'Donagh,Memoirs of a Soldier",
+    "flavor_text": "\"I told him it was just a flesh wound, but the next time I looked at him, poor Tadhg was dead and gone.\" —Maeveen O'Donagh,Memoirs of a Soldier",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5143,7 +5143,7 @@
     "oracle_text": [
       "Whenever you cast an enchantment spell, you may draw a card."
     ],
-    "flavor_text": "\"Weave the magic so that it sings to you, and will always fly home . . . .\"—Verduran teaching",
+    "flavor_text": "\"Weave the magic so that it sings to you, and will always fly home . . . .\" —Verduran teaching",
     "power": "0",
     "toughness": "2",
     "loyalty": null,
@@ -5198,7 +5198,7 @@
       "Enchant creature",
       "At the beginning of the upkeep of enchanted creature's controller, Wanderlust deals 1 damage to that player."
     ],
-    "flavor_text": "\"How terrible to wander wishing only to escape oneself.\"—Taysir",
+    "flavor_text": "\"How terrible to wander wishing only to escape oneself.\" —Taysir",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5303,7 +5303,7 @@
     "oracle_text": [
       "Tap X target creatures. Winter Blast deals 2 damage to each of those creatures with flying."
     ],
-    "flavor_text": "\"Blow, winds, and crack your cheeks rage blow\"—William Shakespeare, King Lear",
+    "flavor_text": "\"Blow, winds, and crack your cheeks rage blow\" —William Shakespeare, King Lear",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5329,7 +5329,7 @@
     "oracle_text": [
       "Rampage 2 (Whenever this creature becomes blocked, it gets +2/+2 until end of turn for each creature blocking it beyond the first.)"
     ],
-    "flavor_text": "\"Give them great meals of beef and iron and steel, they will eat like wolves and fight like devils.\"—William Shakespeare, King Henry V",
+    "flavor_text": "\"Give them great meals of beef and iron and steel, they will eat like wolves and fight like devils.\" —William Shakespeare, King Henry V",
     "power": "2",
     "toughness": "4",
     "loyalty": null,
@@ -5355,7 +5355,7 @@
     "oracle_text": [
       "{T}: Target creature gets +1/+1 until end of turn."
     ],
-    "flavor_text": "\"When one wolf calls, others follow.Who wants to fight creatures that eat scorpions?\"—Maimun al-Wyluli, diary",
+    "flavor_text": "\"When one wolf calls, others follow.Who wants to fight creatures that eat scorpions?\" —Maimun al-Wyluli, diary",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -5382,7 +5382,7 @@
     "oracle_text": [
       "First strike, haste"
     ],
-    "flavor_text": "\"Fair fight? I'll take survival over chivalry any day\"—Tor Wauki, Bandit King",
+    "flavor_text": "\"Fair fight? I'll take survival over chivalry any day\" —Tor Wauki, Bandit King",
     "power": "3",
     "toughness": "1",
     "loyalty": null,
@@ -5463,7 +5463,7 @@
     "oracle_text": [
       "Flying"
     ],
-    "flavor_text": "\"Four things that never meet do here unite To shed my blood and to ravage my heart,A radiant brow and tresses that beguileAnd rosy cheeks and a glittering smile.\"—The Arabian Nights, trans. Haddawy",
+    "flavor_text": "\"Four things that never meet do here unite To shed my blood and to ravage my heart,A radiant brow and tresses that beguileAnd rosy cheeks and a glittering smile.\" —The Arabian Nights, trans. Haddawy",
     "power": "1",
     "toughness": "2",
     "loyalty": null,
@@ -5513,7 +5513,7 @@
     "oracle_text": [
       "Brassclaw Orcs can't block creatures with power 2 or greater."
     ],
-    "flavor_text": "\"Modern Sarpadia's swarming with thrulls. It's a testament to the orcs that they've survived there so long.\"—Elbietta, Argivian scholar",
+    "flavor_text": "\"Modern Sarpadia's swarming with thrulls. It's a testament to the orcs that they've survived there so long.\" —Elbietta, Argivian scholar",
     "power": "3",
     "toughness": "2",
     "loyalty": null,
@@ -5594,7 +5594,7 @@
       "Enchant land",
       "You control enchanted land."
     ],
-    "flavor_text": "\"Every field watered in warriors' blood is sacred ground. Lay it not to waste, but claim it for our own—for glory, and for Stromgald\"—Avram Garrisson,Leader of the Knights of Stromgald",
+    "flavor_text": "\"Every field watered in warriors' blood is sacred ground. Lay it not to waste, but claim it for our own—for glory, and for Stromgald\" —Avram Garrisson,Leader of the Knights of Stromgald",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5693,7 +5693,7 @@
     "oracle_text": [
       "Dwarven Catapult deals X damage divided evenly, rounded down, among all creatures target opponent controls."
     ],
-    "flavor_text": "\"Often greatly outnumbered in battle, dwarves relied on catapults as one means of damaging a large army.\"—Sarpadian Empires, vol. IV",
+    "flavor_text": "\"Often greatly outnumbered in battle, dwarves relied on catapults as one means of damaging a large army.\" —Sarpadian Empires, vol. IV",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5720,7 +5720,7 @@
     "oracle_text": [
       "Whenever Dwarven Soldier blocks or becomes blocked by one or more Orcs, Dwarven Soldier gets +0/+2 until end of turn."
     ],
-    "flavor_text": "\"Orc must die / Orc must die / Not an orc? / March on by.\"—Dwarven marching song",
+    "flavor_text": "\"Orc must die / Orc must die / Not an orc? / March on by.\" —Dwarven marching song",
     "power": "2",
     "toughness": "1",
     "loyalty": null,
@@ -5798,7 +5798,7 @@
       "Enchant creature",
       "Enchanted creature gets +3/+0 and can only attack alone."
     ],
-    "flavor_text": "\"There is no shame in solitude. The lone knight may succeed where a hundred founder.\"—Arna Kennerüd, skyknight",
+    "flavor_text": "\"There is no shame in solitude. The lone knight may succeed where a hundred founder.\" —Arna Kennerüd, skyknight",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5904,7 +5904,7 @@
       "Enchant creature",
       "{R}: Enchanted creature gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"And topples round the dreary westA looming bastion fringed with fire.\"—Alfred, Lord Tennyson,\"In Memoriam\"",
+    "flavor_text": "\"And topples round the dreary westA looming bastion fringed with fire.\" —Alfred, Lord Tennyson,\"In Memoriam\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -5931,7 +5931,7 @@
     "oracle_text": [
       "{R}: Flame Spirit gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"The spirit of the flame is the spirit of change.\"—Lovisa Coldeyes,Balduvian chieftain",
+    "flavor_text": "\"The spirit of the flame is the spirit of change.\" —Lovisa Coldeyes,Balduvian chieftain",
     "power": "2",
     "toughness": "3",
     "loyalty": null,
@@ -6031,7 +6031,7 @@
       "Enchant creature",
       "Enchanted creature gets +2/+2."
     ],
-    "flavor_text": "\"O it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\"—William Shakespeare,Measure for Measure",
+    "flavor_text": "\"O it is excellent / To have a giant's strength, but it is tyrannous / To use it like a giant.\" —William Shakespeare,Measure for Measure",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6057,7 +6057,7 @@
     "oracle_text": [
       "{T}, Sacrifice Goblin Digging Team: Destroy target Wall."
     ],
-    "flavor_text": "\"From down here we can make the whole wall collapse\"\"Uh, yeah, boss, but how do we get out?\"",
+    "flavor_text": "\"From down here we can make the whole wall collapse\" \"Uh, yeah, boss, but how do we get out?\"",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -6081,7 +6081,7 @@
     "mana_cost": "2R",
     "converted_mana_cost": 3,
     "oracle_text": [],
-    "flavor_text": "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back\"—Biggum Flodrot, goblin veteran",
+    "flavor_text": "\"When you're a goblin, you don't have to step forward to be a hero—everyone else just has to step back\" —Biggum Flodrot, goblin veteran",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -6131,7 +6131,7 @@
     "oracle_text": [
       "Each creature you control can't be blocked except by two or more creatures."
     ],
-    "flavor_text": "\"Goblins charge with a deafening war cry. The cry doesn't mean anything—it just drowns out the drums\"—Reod Dai, mercenary",
+    "flavor_text": "\"Goblins charge with a deafening war cry. The cry doesn't mean anything—it just drowns out the drums\" —Reod Dai, mercenary",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6155,7 +6155,7 @@
     "oracle_text": [
       "{2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield."
     ],
-    "flavor_text": "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\"—Sarpadian Empires, vol. IV",
+    "flavor_text": "\"Goblins bred underground, their numbers hidden from the enemy until it was too late.\" —Sarpadian Empires, vol. IV",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6254,7 +6254,7 @@
     "oracle_text": [
       "Incinerate deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn."
     ],
-    "flavor_text": "\"Yes, I think ‘toast' is an appropriate description.\"—Jaya Ballard, task mage",
+    "flavor_text": "\"Yes, I think 'toast' is an appropriate description.\" —Jaya Ballard, task mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6278,7 +6278,7 @@
     "oracle_text": [
       "Inferno deals 6 damage to each creature and each player."
     ],
-    "flavor_text": "\"Some have said there is no subtlety to destruction. You know what? They're dead.\"—Jaya Ballard, task mage",
+    "flavor_text": "\"Some have said there is no subtlety to destruction. You know what? They're dead.\" —Jaya Ballard, task mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6356,7 +6356,7 @@
     "oracle_text": [
       "Destroy all artifacts, creatures, and lands. They can't be regenerated."
     ],
-    "flavor_text": "\"The raging waters had swept away trees, bridges, and even houses. My healers had much work to do.\"—Halvor Arenson, Kjeldoran priest",
+    "flavor_text": "\"The raging waters had swept away trees, bridges, and even houses. My healers had much work to do.\" —Halvor Arenson, Kjeldoran priest",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6505,7 +6505,7 @@
     "oracle_text": [
       "Mountainwalk"
     ],
-    "flavor_text": "\"Folklore has it that to capture a mountain goat is a sign of divine blessing. I just know it's a sign that dinner is on the way.\"—Klazina Jansdotter,Leader of the Order of the Sacred Torch",
+    "flavor_text": "\"Folklore has it that to capture a mountain goat is a sign of divine blessing. I just know it's a sign that dinner is on the way.\" —Klazina Jansdotter,Leader of the Order of the Sacred Torch",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -6769,7 +6769,7 @@
       "• Counter target spell if it's blue.",
       "• Destroy target permanent if it's blue."
     ],
-    "flavor_text": "\"Just the thing for those pesky water mages.\"—Jaya Ballard, task mage",
+    "flavor_text": "\"Just the thing for those pesky water mages.\" —Jaya Ballard, task mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6793,7 +6793,7 @@
     "oracle_text": [
       "Pyrotechnics deals 4 damage divided as you choose among any number of target creatures and/or players."
     ],
-    "flavor_text": "\"Hi ni ya Behold the man of flint, that's me / Four lightnings zigzag from me, strike and return.\"—Navajo war chant",
+    "flavor_text": "\"Hi ni ya Behold the man of flint, that's me / Four lightnings zigzag from me, strike and return.\" —Navajo war chant",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -6819,7 +6819,7 @@
     "oracle_text": [
       "First strike"
     ],
-    "flavor_text": "\"I fear anything with teeth measured in handspans\"—Norin the Wary",
+    "flavor_text": "\"I fear anything with teeth measured in handspans\" —Norin the Wary",
     "power": "2",
     "toughness": "1",
     "loyalty": null,
@@ -6995,7 +6995,7 @@
     "oracle_text": [
       "Stone Spirit can't be blocked by creatures with flying."
     ],
-    "flavor_text": "\"The spirit of the stone is the spirit of strength.\"—Lovisa Coldeyes,Balduvian chieftain",
+    "flavor_text": "\"The spirit of the stone is the spirit of strength.\" —Lovisa Coldeyes,Balduvian chieftain",
     "power": "4",
     "toughness": "3",
     "loyalty": null,
@@ -7050,7 +7050,7 @@
       "Defender (This creature can't attack.)",
       "{R}: Wall of Fire gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"Struggle, and you will only fan the flames.\"—Talibah, embermage",
+    "flavor_text": "\"Struggle, and you will only fan the flames.\" —Talibah, embermage",
     "power": "0",
     "toughness": "5",
     "loyalty": null,
@@ -7100,7 +7100,7 @@
     "oracle_text": [
       "Each player shuffles the cards from his or her hand into his or her library, then draws that many cards."
     ],
-    "flavor_text": "\"'Tis the set of sails, and not the gales, Which tell us the way to go.\"—Ella Wheeler Wilcox, \"Winds of Fate\"",
+    "flavor_text": "\"'Tis the set of sails, and not the gales, Which tell us the way to go.\" —Ella Wheeler Wilcox, \"Winds of Fate\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7124,7 +7124,7 @@
     "oracle_text": [
       "Destroy target Wall. It can't be regenerated. Word of Blasting deals damage equal to that Wall's converted mana cost to the Wall's controller."
     ],
-    "flavor_text": "\"Walls? What walls?\"—Jaya Ballard, task mage",
+    "flavor_text": "\"Walls? What walls?\" —Jaya Ballard, task mage",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7150,7 +7150,7 @@
     "oracle_text": [
       "Flying, protection from red"
     ],
-    "flavor_text": "\"They don't move, do they?\"\"Only for the wrong sort of people.\"\"Are we the wrong sort of people?\"",
+    "flavor_text": "\"They don't move, do they?\" \"Only for the wrong sort of people.\" \"Are we the wrong sort of people?\"",
     "power": "3",
     "toughness": "4",
     "loyalty": null,
@@ -7257,7 +7257,7 @@
       "Enchant Wall",
       "Enchanted Wall can attack as though it didn't have defender."
     ],
-    "flavor_text": "\"When you have been bitten with fangs of granite, you start to long for the ivory sabers of tigers.\"—Norin the Wary",
+    "flavor_text": "\"When you have been bitten with fangs of granite, you start to long for the ivory sabers of tigers.\" —Norin the Wary",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7282,7 +7282,7 @@
       "{W}, Sacrifice an enchantment: Destroy target enchantment.",
       "{3}{U}{U}: Counter target enchantment spell."
     ],
-    "flavor_text": "\"Cloak me in mystery, hide my names from my enemies, and let me draw from the well of power.\"—Halvor Arenson, Kjeldoran priest",
+    "flavor_text": "\"Cloak me in mystery, hide my names from my enemies, and let me draw from the well of power.\" —Halvor Arenson, Kjeldoran priest",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7334,7 +7334,7 @@
       "Enchanted creature gets +1/+1.",
       "{W}: Enchanted creature gets +0/+1 until end of turn."
     ],
-    "flavor_text": "\"Keep your chain mail, warrior. I have my own form of protection.\"—Halvor Arenson, Kjeldoran priest",
+    "flavor_text": "\"Keep your chain mail, warrior. I have my own form of protection.\" —Halvor Arenson, Kjeldoran priest",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7361,7 +7361,7 @@
     "oracle_text": [
       "{T}: Tap target creature with power 2 or less."
     ],
-    "flavor_text": "\"When one's word is law, one's whim is equally binding.\"—Calmont, Aysen bureaucrat",
+    "flavor_text": "\"When one's word is law, one's whim is equally binding.\" —Calmont, Aysen bureaucrat",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -7413,7 +7413,7 @@
       "You gain 1 life.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"Out there, there are spirits, but here, there is wine.\"—Blessing for the bounty of Kjeld",
+    "flavor_text": "\"Out there, there are spirits, but here, there is wine.\" —Blessing for the bounty of Kjeld",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7439,7 +7439,7 @@
     "oracle_text": [
       "{0}: Return Blinking Spirit to its owner's hand."
     ],
-    "flavor_text": "\"Don't look at it Maybe it'll go away\"—Ib Halfheart, goblin tactician",
+    "flavor_text": "\"Don't look at it Maybe it'll go away\" —Ib Halfheart, goblin tactician",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -7518,7 +7518,7 @@
     "oracle_text": [
       "Untapped creatures you control get +0/+2."
     ],
-    "flavor_text": "\"Hang out our banners on the outward walls; / The cry is still, ‘They come'; our castle's strength / Will laugh a siege to scorn.\"—William Shakespeare, Macbeth",
+    "flavor_text": "\"Hang out our banners on the outward walls; / The cry is still, 'They come'; our castle's strength / Will laugh a siege to scorn.\" —William Shakespeare, Macbeth",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7741,7 +7741,7 @@
     "oracle_text": [
       "Protection from black"
     ],
-    "flavor_text": "\"The dead may be beyond the law, but speaking the wisdom of the dead will afford no protection\"—Calmont, Aysen bureaucrat",
+    "flavor_text": "\"The dead may be beyond the law, but speaking the wisdom of the dead will afford no protection\" —Calmont, Aysen bureaucrat",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -7864,7 +7864,7 @@
     "oracle_text": [
       "Exile two target artifacts."
     ],
-    "flavor_text": "\"All this nonsense made by magesRusts and crumbles through the ages.\"—Aline Corralurn, \"Inheritance\"",
+    "flavor_text": "\"All this nonsense made by magesRusts and crumbles through the ages.\" —Aline Corralurn, \"Inheritance\"",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7937,7 +7937,7 @@
       "Prevent the next 1 damage that would be dealt to target creature or player this turn.",
       "Draw a card at the beginning of the next turn's upkeep."
     ],
-    "flavor_text": "\"Sometimes even the smallest boon can save a life.\"—Halvor Arenson, Kjeldoran priest",
+    "flavor_text": "\"Sometimes even the smallest boon can save a life.\" —Halvor Arenson, Kjeldoran priest",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -7989,7 +7989,7 @@
     "oracle_text": [
       "Hipparion can't block creatures with power 3 or greater unless you pay {1}."
     ],
-    "flavor_text": "\"Someone once said that hipparions are to warriors what aesthir are to skyknights. Don't believe it.\"—General Jarkeld, the Arctic Fox",
+    "flavor_text": "\"Someone once said that hipparions are to warriors what aesthir are to skyknights. Don't believe it.\" —General Jarkeld, the Arctic Fox",
     "power": "1",
     "toughness": "3",
     "loyalty": null,
@@ -8071,7 +8071,7 @@
     "oracle_text": [
       "{1}, {T}: Target creature gains first strike until end of turn."
     ],
-    "flavor_text": "\"In these, our final days, I offer this. Though we could not save Icatia, we gave our children time to grow, and love, before it fell.\"—Ailis Connaut, diary",
+    "flavor_text": "\"In these, our final days, I offer this. Though we could not save Icatia, we gave our children time to grow, and love, before it fell.\" —Ailis Connaut, diary",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -8147,7 +8147,7 @@
       "Protection from red",
       "Creatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent."
     ],
-    "flavor_text": "\"But who is to guard the guards themselves?\"—Juvenal, Satires",
+    "flavor_text": "\"But who is to guard the guards themselves?\" —Juvenal, Satires",
     "power": "3",
     "toughness": "3",
     "loyalty": null,
@@ -8220,7 +8220,7 @@
     "oracle_text": [
       "Artifacts, creatures, and lands played by your opponents enter the battlefield tapped."
     ],
-    "flavor_text": "\"Make people wait for what they want, and you have power over them. This is as true for merchants and militia as it is for cooks and couples.\"—Gwendlyn Di Corci",
+    "flavor_text": "\"Make people wait for what they want, and you have power over them. This is as true for merchants and militia as it is for cooks and couples.\" —Gwendlyn Di Corci",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -8301,7 +8301,7 @@
       "Flying",
       "{1}{W}: Mesa Falcon gets +0/+1 until end of turn."
     ],
-    "flavor_text": "\"The faith of Serra is borne on wings of hope.\"—Gulsen, abbey matron",
+    "flavor_text": "\"The faith of Serra is borne on wings of hope.\" —Gulsen, abbey matron",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -8407,7 +8407,7 @@
     "mana_cost": "2W",
     "converted_mana_cost": 3,
     "oracle_text": [],
-    "flavor_text": "\"‘Do you know, I always thought Unicorns were fabulous monsters,too? I never saw one alive before' ‘Well, now that we have seen each other,' said the Unicorn, ‘if you'll believe in me, I'll believe in you.'\"—Lewis Carroll,Through the Looking-Glass",
+    "flavor_text": "\"'Do you know, I always thought Unicorns were fabulous monsters,too? I never saw one alive before' 'Well, now that we have seen each other,' said the Unicorn, 'if you'll believe in me, I'll believe in you.'\" —Lewis Carroll,Through the Looking-Glass",
     "power": "2",
     "toughness": "2",
     "loyalty": null,
@@ -8462,7 +8462,7 @@
     "oracle_text": [
       "First strike; banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)"
     ],
-    "flavor_text": "\"As the cavalry bore down, we faced them with swords drawn and pikes hidden in the grass at our feet. ‘Don't lift your pikes 'til I give the word,' I said.\"—Maeveen O'Donagh,Memoirs of a Soldier",
+    "flavor_text": "\"As the cavalry bore down, we faced them with swords drawn and pikes hidden in the grass at our feet. 'Don't lift your pikes 'til I give the word,' I said.\" —Maeveen O'Donagh,Memoirs of a Soldier",
     "power": "1",
     "toughness": "1",
     "loyalty": null,
@@ -8516,7 +8516,7 @@
     "oracle_text": [
       "Protection from red"
     ],
-    "flavor_text": "\"For my confession they burned me with fire / And found that I was for endurance made.\"—The Arabian Nights,trans. Haddawy",
+    "flavor_text": "\"For my confession they burned me with fire / And found that I was for endurance made.\" —The Arabian Nights,trans. Haddawy",
     "power": "1",
     "toughness": "2",
     "loyalty": null,
@@ -8564,7 +8564,7 @@
     "oracle_text": [
       "Target blocking creature gets +7/+7 until end of turn."
     ],
-    "flavor_text": "\"I too shall be brought low by death, but until then let me win glory.\"—Homer, Iliad, Book XVIII",
+    "flavor_text": "\"I too shall be brought low by death, but until then let me win glory.\" —Homer, Iliad, Book XVIII",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -8588,7 +8588,7 @@
     "oracle_text": [
       "Prevent the next 3 damage that would be dealt to target creature this turn. At the beginning of the next end step, put a +0/+1 counter on that creature for each 1 damage prevented this way."
     ],
-    "flavor_text": "\"Divine gifts are granted to those who are worthy.\"—Halvor Arenson, Kjeldoran priest",
+    "flavor_text": "\"Divine gifts are granted to those who are worthy.\" —Halvor Arenson, Kjeldoran priest",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -8725,7 +8725,7 @@
     "oracle_text": [
       "Banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)"
     ],
-    "flavor_text": "\"You have almost completed your four years, my son. Soon you shall be a skyknight.\"—Arna Kennerüd, skyknight",
+    "flavor_text": "\"You have almost completed your four years, my son. Soon you shall be a skyknight.\" —Arna Kennerüd, skyknight",
     "power": "0",
     "toughness": "3",
     "loyalty": null,
@@ -8776,7 +8776,7 @@
       "Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)",
       "Whenever enchanted creature deals damage, you gain that much life."
     ],
-    "flavor_text": "\"I regret feeding Kaervek's hunger for power—far better to live with animals innocent of such ambitions.\"—Jolrael",
+    "flavor_text": "\"I regret feeding Kaervek's hunger for power—far better to live with animals innocent of such ambitions.\" —Jolrael",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -8929,7 +8929,7 @@
     "oracle_text": [
       "{8}, {T}: Aladdin's Ring deals 4 damage to target creature or player."
     ],
-    "flavor_text": "\". . . The magician drew a ring off his finger . . . , saying: ‘It is a talisman against all evil, so long as you obey me.'\"—The Arabian Nights,Junior Classics trans.",
+    "flavor_text": "\". . . The magician drew a ring off his finger . . . , saying: 'It is a talisman against all evil, so long as you obey me.'\" —The Arabian Nights,Junior Classics trans.",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -9366,7 +9366,7 @@
     "oracle_text": [
       "{3}: Regenerate Diabolic Machine."
     ],
-    "flavor_text": "\"The bolts of our ballistae smashed into the monstrous thing, but our hopes died in our chests as its gears continued turning.\"—Sevti Mukul, The Fall of Alsoor",
+    "flavor_text": "\"The bolts of our ballistae smashed into the monstrous thing, but our hopes died in our chests as its gears continued turning.\" —Sevti Mukul, The Fall of Alsoor",
     "power": "4",
     "toughness": "4",
     "loyalty": null,
@@ -9441,7 +9441,7 @@
     "oracle_text": [
       "{2}: Dragon Engine gets +1/+0 until end of turn."
     ],
-    "flavor_text": "\"How is it the legged engines seem so much more alive than their wheeled counterparts? Simply, they were born, not made.\"—Mishra",
+    "flavor_text": "\"How is it the legged engines seem so much more alive than their wheeled counterparts? Simply, they were born, not made.\" —Mishra",
     "power": "1",
     "toughness": "3",
     "loyalty": null,
@@ -9537,7 +9537,7 @@
     "oracle_text": [
       "Creature spells cost {2} more to cast."
     ],
-    "flavor_text": "\"Without the protection of Feroz's Ban, I fear the Homelands are lost.\"—Daria",
+    "flavor_text": "\"Without the protection of Feroz's Ban, I fear the Homelands are lost.\" —Daria",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -9902,7 +9902,7 @@
     "oracle_text": [
       "{2}, {T}, Sacrifice Jester's Cap: Search target player's library for three cards and exile them. Then that player shuffles his or her library."
     ],
-    "flavor_text": "\"Know your foes' strengths as well as their weaknesses.\"—Arcum Dagsson, Soldevi machinist",
+    "flavor_text": "\"Know your foes' strengths as well as their weaknesses.\" —Arcum Dagsson, Soldevi machinist",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -9926,7 +9926,7 @@
     "oracle_text": [
       "{4}, {T}: Target creature can't be blocked this turn except by Walls."
     ],
-    "flavor_text": "\"If that thief Joven ever shows his head around here again, make sure he leaves without it.\"—Eron the Relentless",
+    "flavor_text": "\"If that thief Joven ever shows his head around here again, make sure he leaves without it.\" —Eron the Relentless",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -10102,7 +10102,7 @@
     "oracle_text": [
       "Flying (This creature can't be blocked except by creatures with flying or reach.)"
     ],
-    "flavor_text": "\"It has been my honor to improve on Thran's original design. Perhaps history will remember me in some small part for my work.\"—Urza, in his apprenticeship",
+    "flavor_text": "\"It has been my honor to improve on Thran's original design. Perhaps history will remember me in some small part for my work.\" —Urza, in his apprenticeship",
     "power": "0",
     "toughness": "2",
     "loyalty": null,
@@ -10254,7 +10254,7 @@
     "oracle_text": [
       "{1}, {T}, Sacrifice a creature: Skull Catapult deals 2 damage to target creature or player."
     ],
-    "flavor_text": "\"Let any who doubt the evil of using the ancient devices look at this infernal machine. What manner of fiend would design such a sadistic device?\"—Sorine Relicbane, Soldevi heretic",
+    "flavor_text": "\"Let any who doubt the evil of using the ancient devices look at this infernal machine. What manner of fiend would design such a sadistic device?\" —Sorine Relicbane, Soldevi heretic",
     "power": null,
     "toughness": null,
     "loyalty": null,
@@ -10479,7 +10479,7 @@
     "oracle_text": [
       "Players can't untap more than one land during their untap steps."
     ],
-    "flavor_text": "\"When once winter has ahold,Not willingly does she withdrawher icy touch, wistfully caressing—The deepened air sleeps its cold.\"—Aline Corralurn, \"Late Thaw\"",
+    "flavor_text": "\"When once winter has ahold,Not willingly does she withdrawher icy touch, wistfully caressing—The deepened air sleeps its cold.\" —Aline Corralurn, \"Late Thaw\"",
     "power": null,
     "toughness": null,
     "loyalty": null,

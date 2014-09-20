@@ -134,7 +134,7 @@ class Card
       line.css('img').each do |img|
         img.content = translate_icon(img.alt)
       end
-      line.text.strip.presence
+      line.text.strip.gsub(/ +/, ' ').presence
     end.compact
   end
 
