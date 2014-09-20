@@ -1,10 +1,10 @@
 require 'multi_json'
 require_relative './script_util.rb'
 
-def run(*set_codes)
+send def run(*set_codes)
   sets_to_include = read('data/gatherer/sets.json').select{|s| s['code'].in? set_codes}
 
-  mgci_cards = read('data/mgci/cards.json')
+  mgci_cards = read('data/mgci/cards_mod.json')
     .select{|c| sets_to_include.any?{|s| s['name']==c['set_name']}}
     .map{|c| c.merge('sort_key' => [c['set_name'], c['collector_num'].to_i, c['collector_num']])}
     .sort_by{|c| c['sort_key']}
@@ -22,6 +22,4 @@ def run(*set_codes)
     write("compare/sorted-mgci-#{codes}.json", mgci_cards)
     write("compare/sorted-gath-#{codes}.json", gath_cards)
   end
-end
-
-run(*ARGV)
+end, *ARGV

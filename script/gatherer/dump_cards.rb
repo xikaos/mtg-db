@@ -89,6 +89,8 @@ class Card
   end
 
   def illustrator
+    return ILLUSTRATORS[@multiverse_id] if @multiverse_id.in?(ILLUSTRATORS)
+
     # TODO: Fix for split cards with separate illustrators
     case artist = value_of('artist')
     when 'Brian Snoddy'; 'Brian Snõddy'

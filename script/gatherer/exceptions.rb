@@ -736,6 +736,10 @@ COLLECTOR_NUMS = {
   '27271'=>'65','27564'=>'26'
 }.freeze
 
+ILLUSTRATORS = {
+  '1378' => 'Cornelius Brudi' # Misattributed Revised Plateau, see http://archive.wizards.com/Magic/magazine/article.aspx?x=mtgcom/arcana/35
+}.freeze
+
 MANA_COST = {
   '74257' => '½W' # Unhinged - Little Girl
 }.freeze
@@ -806,12 +810,14 @@ FLAVOR_TEXT = {
 POWER = {
   '24' => nil, # Alpha - Jade Statue
   '319' => nil, # Beta - Jade Statue
+  '621' => nil, # Unlimited - Jade Statue
   '74257' => '½' # Unhinged - Little Girl
 }.freeze
 
 TOUGHNESS = {
   '24' => nil, # Alpha - Jade Statue
   '319' => nil, # Beta - Jade Statue
+  '621' => nil, # Unlimited - Jade Statue
   '74257' => '½' # Unhinged - Little Girl
 }.freeze
 
