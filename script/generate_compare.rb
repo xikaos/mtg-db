@@ -10,7 +10,7 @@ def run(*set_codes)
     .sort_by{|c| c['sort_key']}
     .map{|c| c.except('sort_key', 'flavor_text')}
 
-  gath_cards = sets_to_include.inject([]){|cards,set| cards+read("data/mgci/sets/#{set['code']}.json")}
+  gath_cards = sets_to_include.inject([]){|cards,set| cards+read("data/gatherer/sets/#{set['code']}.json")}
     .map{|c| c.merge('sort_key' => [c['set_name'], c['collector_num'].to_i, c['collector_num']])}
     .sort_by{|c| c['sort_key']}
     .map{|c| c.except('sort_key', 'flavor_text')}
